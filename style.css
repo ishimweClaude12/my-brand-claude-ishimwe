@@ -99,7 +99,6 @@
     width:100%;
 }
 .about-text-wrapper{
-    width: 820px;
     padding: 4rem;
 }
 .about-text-wrapper h1{
@@ -122,6 +121,41 @@
 .manchester-uni h1{
     margin: 2rem 0;
 }
+
+/* =============================================      Testimonials ========================*/
+.customer-testimonials{
+    margin: 2rem 0;
+    padding: 4rem;
+    background-color: #EEF4FA;
+}
+.customer-testimonials h1{
+    margin: 2rem 0;
+}
+.test-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.testimonial-1{
+    width: 35%;
+    border: 1px solid #006B6A;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+.testimonial-1 p{
+    font-size: 21.333px;
+    margin: 2rem 0;
+}
+.avatar{
+    display: flex;
+}
+.avatar img{
+    width: 74px;
+    margin-right: 1rem;
+}
+.avatar h2{
+    margin-bottom: .4rem;
+}
 @media only screen and (max-width: 620px) {
     .menu-button{
         display: block;
@@ -138,9 +172,12 @@
     .nav-wrapper{
         padding: .5rem 2rem;
     }
-    .profile-picture{
-        width: 100%;
+    .container{
+        width: 80%;
     }
+    .profile-picture{
+        width: 500px;
+    } 
     .hero-text{
         padding-left: 2rem;
     }
@@ -152,6 +189,16 @@
     }
     .manchester-uni img{
         width: 260px;
+    }
+    .test-wrap{
+        flex-direction: column;
+    }
+    .testimonial-1{
+        width: 80%;
+    }
+    .about-text-wrapper{
+        width: 340px;
+        padding: 2rem;
     }
   }
 
