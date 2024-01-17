@@ -64,3 +64,65 @@
 .base{
     color: #5E3BEE,
 }
+.menu-button{
+    display: none;
+}
+/*=================               My Skills Section             ====================*/
+.skills-section{
+    padding: 4rem;
+}
+.container{
+    box-shadow: 11px 15px 10px -4px rgba(0,0,0,0.1);
+    padding: 2rem;
+    border-radius: 12px;
+}
+.card{
+    width: 260px;
+} 
+.card h2{
+    margin: 2rem 0;
+}
+
+.cards-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.feather{
+    padding: 2rem;
+    background-color: #fff;
+    
+}
+@media only screen and (max-width: 620px) {
+    .menu-button{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .contact-btn{
+        display: none;
+    }
+    .home-page{
+        flex-direction: column;
+    }
+    .nav-wrapper{
+        padding: .5rem 2rem;
+    }
+    .profile-picture{
+        width: 100%;
+    }
+    .hero-text{
+        padding-left: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 900px){
+    .menu{
+        display: none;
+        
+    }
+    .font-46{
+        font-size: 24px;
+    }
+    
+  }
