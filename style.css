@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+   
+    padding: 15px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-me{
+    width: 170px;
+    height: 70px;
+    border: 1.33px solid #5E3BEE;
+    background-color: #fff;
+    font-size: 21.33;
+    color: #5E3BEE;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: -4px 14px 14px 4px rgba(0,0,0,0.1);
+    padding: 1rem 4rem;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.menu ul li{
+    list-style: none;
+    margin: 0 .8rem;
+    font-size: 21.33px;
+}
+.home-page{
+    display: flex;
+    justify-content: space-between;
+    background-color: #EEF4FA;
+}
+.profile-picture{
+    width: 999px;
+    padding-top: 7rem;
+
+}
+.text-1{
+    font-size: 36px;
+}
+.bold{
+    font-weight: bold;
+}
+.font-46{
+    font-size: 46px;
+}
+.hero-text{
+    padding-top: 8rem;
+    padding-left: 4rem;
+}
+.base{
+    color: #5E3BEE,
+}
