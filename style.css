@@ -90,7 +90,37 @@
 .feather{
     padding: 2rem;
     background-color: #fff;
-    
+
+}
+.about-wrapper{
+    display: flex;
+}
+.about-image-wrapper{
+    width:100%;
+}
+.about-text-wrapper{
+    width: 820px;
+    padding: 4rem;
+}
+.about-text-wrapper h1{
+    margin: 2rem 0;
+}
+
+/* ================================================ Portfolio Section ========================================*/
+.portfolio-section{
+    padding: 4rem;
+}
+.manchester-uni{
+   padding: 2rem;
+    width: 410px;
+    box-shadow: 11px 15px 10px -4px rgba(0,0,0,0.1);
+    border-radius: 12px;
+}
+.manchester-uni img{
+    width: 400px;
+}
+.manchester-uni h1{
+    margin: 2rem 0;
 }
 @media only screen and (max-width: 620px) {
     .menu-button{
@@ -114,6 +144,15 @@
     .hero-text{
         padding-left: 2rem;
     }
+    .about-wrapper{
+        flex-direction: column;
+    }
+    .portfolio-section{
+        padding: 1rem;
+    }
+    .manchester-uni img{
+        width: 260px;
+    }
   }
 
   @media only screen and (max-width: 900px){
@@ -124,5 +163,10 @@
     .font-46{
         font-size: 24px;
     }
-    
+    .about-wrapper{
+        flex-direction: column;
+    }
+    .about-text-wrapper{
+        width: 400px;
+    }
   }
