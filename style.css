@@ -49,7 +49,7 @@ h1,h2,h3,p,a{
     background-color: #EEF4FA;
 }
 .profile-picture{
-    width: 999px;
+    width: 50%;
     padding-top: 7rem;
 
 }
@@ -63,6 +63,7 @@ h1,h2,h3,p,a{
     font-size: 46px;
 }
 .hero-text{
+    width: 50%;
     padding-top: 8rem;
     padding-left: 4rem;
 }
@@ -78,11 +79,11 @@ h1,h2,h3,p,a{
 }
 .container{
     box-shadow: 11px 15px 10px -4px rgba(0,0,0,0.1);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 12px;
 }
 .card{
-    width: 220px;
+    width: 22%;
 } 
 .card h2{
     margin: 2rem 0;
@@ -102,10 +103,17 @@ h1,h2,h3,p,a{
     display: flex;
 }
 .about-image-wrapper{
-    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+}
+.about-image-wrapper img{
+
+    width:80%;
 }
 .about-text-wrapper{
-    padding: 4rem;
+    padding: 4rem 7rem 4rem 4rem;
     width: 50%;
 }
 .about-text-wrapper h1{
@@ -175,13 +183,13 @@ h1,h2,h3,p,a{
     gap: 2;
 }
 .blog{
-    width: 340px;
+    width: 25%;
     padding: 2rem;
     box-shadow: 11px 15px 10px -4px rgba(0,0,0,0.1);
     border-radius: 8px;
 }
 .blog img{
-    width: 340px;
+    width: 80%;
 }
 .blog h1{
     margin: 2rem 0;
@@ -218,6 +226,50 @@ h1,h2,h3,p,a{
 .font-24{
     font-size: 24px;
 }
+
+
+/*=====================              Contact Me Section                ================*/
+.contact-me-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-me-section h1{
+    font-size: 36px;
+    margin: 2rem 0;
+}
+.contact-me-section h2{
+    font-size: 24px;
+    margin: 0 0 2rem 0;
+}
+.contact-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 21.33px;
+    width: 100%;
+}
+.col-span-2{
+    grid-column: span 2;
+}
+.input{
+    width: 100%;
+    height: 24px;
+}
+.text-area{
+    width: 100%;
+    
+}
+.select{
+    width: 100%;
+    height: 24px;
+}
+.submit-btn{
+    border-radius: 8px;
+    background-color: #5E3BEE;
+    color: #fff;
+    margin: 2rem;
+}
 @media only screen and (max-width: 620px) {
     .menu-button{
         display: block;
@@ -247,10 +299,17 @@ h1,h2,h3,p,a{
         flex-direction: column;
     }
     .about-text-wrapper{
+        margin-left: 1rem;
+        width: 100%;
+    }
+    .about-image-wrapper{
         width: 100%;
     }
     .portfolio-section{
         padding: 1rem;
+    }
+    .portfolio-title{
+        margin-left: 2rem;
     }
     .manchester-uni img{
         width: 260px;
@@ -269,15 +328,31 @@ h1,h2,h3,p,a{
         flex-direction: column;
         width: 100%;
     }
+    .card{
+        width: 80%;
+    }
     .blog{
         width: 90%;
-        margin: 4rem auto;
+        margin: 4rem 0;
     }
     .blog img{
         width: 100%;
     }
     .blog-section{
         padding: 2rem;
+    }
+    .contact-form{
+       display: flex;
+       gap: 1rem;
+       flex-direction: column;
+       width: 350x;
+    }
+    .contact-me-section h2{
+        font-size: 16px;
+        margin: 0 0 2rem 1rem;
+    }
+    .see-all .see-all-btn{
+        font-size: 16px;
     }
   }
 
@@ -294,5 +369,10 @@ h1,h2,h3,p,a{
     }
     .about-text-wrapper{
         width: 400px;
+    }
+    .contact-me-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
   }
