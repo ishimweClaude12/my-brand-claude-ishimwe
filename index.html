@@ -10,7 +10,7 @@
     <title>Claude Ishimwe | Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="nav-wrapper">
             <div class="logo">
                 <i>
@@ -49,8 +49,9 @@
     <main>
         <section id="hero" class="home-page">
             <div class="hero-text">
-                <p class="text-1">Hey, I am <span class="bold font-46">Claude</span></p>
-                <h1>I develop <span class="font-46" style="color: #5E3BEE;">Websites</span> and <span class="font-46" style="color: #5E3BEE;">Mobile Apps.</span></h1>
+                <p class="text-1">Hey, I am <span class="c-text">Claude</span></p>
+                <h1>I develop <span class="purple">Websites</span> and <span class="purple">Mobile Apps.</span></h1>
+                <button>Get In Touch</button>
             </div>
             <div class="profile-picture">
                <img src="./assets/images/Me.svg" alt="my profile picture" >
@@ -59,7 +60,7 @@
         <section id="skills" class="skills-section">
             <h1>My Skills</h1>
             <div class="cards-wrapper">
-                <div class="container card">
+                <div class="container card skill-card border-bottom">
                     <i>
                         <svg width="144" height="136" viewBox="0 0 144 136" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_d_1_883)">
@@ -88,7 +89,7 @@
                     <p>I have a fair knowledge about the most building block of the website, which is used to make the website front-end side. </p>
                 </div>
 
-                <div class="container card">
+                <div class="container card skill-card">
                     <i>
                         <svg width="145" height="138" viewBox="0 0 145 138" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_d_1_890)">
@@ -120,36 +121,36 @@
                     <p>I have a fair knowledge about the most building block of the website, which is used to make the website front-end side. </p>
                 </div>
 
-                <div class="container card">
+                <div class="container card skill-card">
                     <i>
-                        
-                           <span>
-                               <svg width="113" height="112" viewBox="0 0 113 112" fill="none" xmlns="http://www.w3.org/2000/svg"                   xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g filter="url(#filter0_d_1_897)">
-  <rect x="16.3333" y="16" width="80" height="80" rx="10.6667" fill="white" shape-rendering="crispEdges"/>
-  <rect x="29.6665" y="29.3334" width="53.3333" height="53.3333" fill="url(#pattern0)"/>
-  </g>
-  <defs>
-  <filter id="filter0_d_1_897" x="0.333313" y="0" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-  <feOffset/>
-  <feGaussianBlur stdDeviation="8"/>
-  <feComposite in2="hardAlpha" operator="out"/>
-  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_897"/>
-  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_897" result="shape"/>
-  </filter>
-  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-  <use xlink:href="#image0_1_897" transform="scale(0.0078125)"/>
-  </pattern>
-  <image id="image0_1_897" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACAEAYAAACTrr2IAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAABgAAAAYADwa0LPAAAAB3RJTUUH5ggICigJ0BuiyQAAHZhJREFUeNrtnXtAVNXWwH97BnymXhXpYeUtNbOrdjMfXcNES0lQ9BaSeRVfacwA+fziml1FMcpEvSozIL6SzAeamuD4SkNLTLNrlo+y7GlZ4CNNRWGY/f3BDJVmwjw4M7B//wlnr73WkbXOPmevtbZAoVD4IHGWOEvduiClddLDD4MMYGVQEDCHO9u3B5oLQ+vWIOOY3qABiIbs2LMHxAu6AxMnQsrLKS/v3i20NkOhUPwRY3LH5NasCZdrXq7ZrRvovuXOHj1AthHnO3cGcYAP2rQBtpOj15ddrpzC1MJCkEKKrl1VAFAoNMVw2nD6jjtAP5T8sDCQF7CGhQGnxT8ffRQIonvNmh6YOIXgnTtVAFAoKoSYaTHT2rYFGS/jIyJA3CKPh4YC/cXc++/XQKE0OfPiRRUAFAq3EtMypuXf/gaiuWz91FNgm0VS//4gZjOreXOttfsNUQR//70KAAqFU4ySo+Rf/gLWU4XGyEigDcOiooAnxJKHH9ZauxsjsrkzI0MFAIXiT5ksJ0udDvLr5dd77DFgIQuHDQOxnpV9+wL1uaV6da21LD8CaYuMVAFAofgdju01W3trVv/+IG8Ss0aNAjGecffdp7V2buAsP165AgWNLzdt1EgFAEUVJ3pL9JZWrUA/UD8wLg44Y/v2X/8CosW42rW11u4PiCLy8mUgg8waNZwYn8jdW7eCqYF5fEiIn9bWKBQVizHTmBkUBCJN3hcfD9wpRFgYECn7CQEgxmmtIwB9aPHll0CBHJidDbqJTMzKguIuIq9dOxDAyy+XX6zsx6a33nL8SwUARSVGCDAONw7v1QuERUbHxwM7KflI11LkAJCijW6OhBzRTn70zjvAdF7JygJrpG3bxo0wX8wXX38NwKjfjoupa7wpKcmJCWOJkRL8brb+NzsbaMD2kjCiUFQShADjWePZ8HAQx1g6dSqQwbE2bTRU6lGCi4uBEyTn5ADnRfjKlVCt2+Waa9fC7E6Lxp05c2MxxkxjZrNmIHaS8/nnTuiRQPCHH4KpkTmyXTvHD9UKQOHjGOsa6/boAZzmdGIiiNGM6tBBQ4Ueoc7RoyAmyOcXLwZbF7F92TIwP2fe9+OPAOxzRqxuNhOfegpkW7o7M16e4f4VK67+qQoACh+j9B0+l7EvvQQUEf7II8Do3y+VPU5NrBcuAD/I3itXgm0enZYsgdSGqQ1zcwGYDkCke6aTO1nSvz8whuXlGniEQzYb6I/rj69adfUv1SuAwsuJs8RZbr8dbDusLZOSgAIxY9AgDRRpwsUvvgD8Za2FC6Fax8JmCxaUfQnvLLGBsYGtW4PsZ4v4+GMnBKQQvHMnmIQ5Mjj46l+qFYDCyxg/cPzA2rXhUvil8AkTwNawuNa4cUCBmOHUtld5sX8sE104bLGA7TLPzJ0L5vPm89u2lVwiZcXdD1usLXbgQBA/8aMz40Uf2Wblyuv9VgUAhRcgBMTGGKIjIqBAd+nrGTNKPnY1aVIBk9uXyAhptljANpeUhARIzUtN/fBD7e7JZDlZ+vnBqYL8Y4MGAf/HnHIJWMMKqxWsGbLP2rXAhj+6SAUAhUbE7o/df++9II/ZXl2wAORudEFBgI27PTpxO1peugQykmGLFkFxreJas2b9Zttth9Z3poT8n/N/DgsD8SJzbr21/OPlAQ5v2wZpt6Xdlpd3vatUAFBUECNHjBzh7w/+F/0vxseDnGVLevFFPJ5LX7rffhPh6elQ9JzVmpQE6UPTa588qfVduT7iDP8ZPtwFAUkkvf76DWfR2kxFZceYacz8+99BdIWFC4EEch580IMT2pf0chVr3nwT9Pv1+ydMgHmh80KPH9f6bpTtft1yC4g4nv3uOyCCp/3K8aCW03jpzBm4+JeLf2ncGJaKpeLy5etdrVYACjczcuTIkbVqgf9m/82JiYCfZNQoIKF8ravKzQ7Z7c03wXachRMnQmpgauBnn2l9N5xjyBDK7fgOxC5pW7YMlvb5M8d3oAKAwk04GmHwtVy5YgXQWw5s3RrYTo5HJnQk3EzRZY0ZAylHU8xbtmh9F1xHTJbhgwcD3eypyuUd/4het3hxWa/WaW2uwpcRAmJrGNbFxQGvydT9+4HmlDi+u4njqVOnQHwnnzMYIG9N/petW0PKkZQjlcHxYzrHdA4NBbqJsffe64SAW/lk715IqZ9S/+DBsg5SKwBFORk5YuSIgADw/7df9cWLQc5iW+/eQIabJ3Jsz23CajaDbYyUkyZB6obU1LNntb4LrlP6qnTC/8SkScCHcs+4cUAbnAyfImThQgDeLfsYFQAUZcQYaYzs2hXEM3R//XVgFjmNG7t/HjmGsZ9/DnKf3DdiBKTWSB2wcycAuVrfA3dgWG5Y3qUL6B4UfvPnA3NlTosWwF381SmB9pTkgnMF565N9b0RKgAo/gQhIEYfo58wAciXPyYmAhnk6Nz46li6TddQNnz5ZWjEqX5JSTCl2eo1hYVa3wHXKV0x1dO/MGsWsNueyrzbPfJlBx5btQoWRy6O/OWX8o5WAUBxFaVL05P6wYsWAXfKN/r3d/88cgD/ev99EJ1F52eeAdNR89HDh7W23j0IAcYOxg6DBoEYx8CZM4F5zAgIcP9c+sG2penpTmuq4V1SeBWOAyp08eKh9euB6nRv29aNE9hTU8XdBCQkwE+35//9lVdg9erVq4uLtbbedeIscZamTaG4fnH9tDQQy3j9scc8OOF4PnvtNTDdZd4+dKizQtQKoMpjOG043akT6OaK5998E6hO91tuceME/6H/118DUWLwgAGQ0tHUcc8eAJxpa+E1ODIb/br7dR83DmwTikdNmgTCUyf52AMoD4p/zJwJec/nNZg40VWhagVQZYltZ/jv0KEg7xG7UlNxe0qu7ELwqlVg3Wbd9uyzkL4gfcG5c1pb7TpxNaPDOnQAW46u+4IFeL7jkL2Tj+4D28cjRsC80LRpBw64S7gKAFWOmNkGQ3w88IUQr7ziRsHvsa2gAEQHzk2YACkLzHlzyle/5pVcs133jBwyfjzlPpSzzNiLlfhZHpk6FfJyT51KTvbUq5IKAFUCIcB40Hjw1VdBpDN//Hg3Cs+QE44fB27X9ejTB0xHTZXiY15suKFaeDjI3mJcSgrwEefuuMODEzZglcUCHBchRiOYlpuWf/ONp61UAaDS0q9fv356Pdy8qVHd1FSQg6k+YoT75Mt4/v3uu2A7ajsaEQFpIWkh1y879X5Ki3D2yfavvornOw8tkok//QSyjej5/PNg3mfel+HuZKob4sniDIUmTJb9IqpVA/Fto+w33gCa0D4qyo0TZIrV6elgzbPm9e8P88fMH1P+/WfvwLFdFxUF4heOl/TLF4ceesgDk9k7DfGJDF62DIpaFE/u0wfSstKy7B9FNUDtAlQaHO+q+Sf9EtasAfEVgT17ukGw/euznMf8MWPAbDKZU1KABSzQ2mZneC7r2febN4fiQP3K+fOBDAq7dvXghPZegrIZ90RHgzk51X/7dq3vggNVDOTzOHro+c/3e8xiAfES09zh+I66cp2/7bNu3cAcaY5M0egQDVeIs8RZqlcvqVacMgWs/9A3O3QIjzm+I7ORHeKdqVNB10r/VKtWYPY3e5HjO1DfAHyW0q/Tw/1qZWfjvj9o+7upOKnXhYSUt7rMeyhtHy75MD0d2MUvLVt6cMLRNMvNBcLFgpEjfeVjqAoAPofjiV8QcCnHYuHXvviu8jFrvvoKdBP0r3Xv7jsddBwYDAZD/fqgO0foq68C/xF3Dx8OpGASnvw7tzcikd+LYenpoL9TDrDZrr3MVqzbefIkBBwJOHL0KEwRU8QfXVexqADgM3jK8WUyM48cAVuELaJHD0jbmLbx+++1trbslFbXfSa2r1wJnKK6WzMZ3Y090MpbCR4+HMyZ5sx33tFKGRUAvB6PPfF3y8T9+6GoffG/e/YsydQ7dUpra8vObz7mXf74Y5w/Llsr0uTMixdBv9528IEHYG7v+Q85deafS6iPgF6Lx5749v17XZLf3kcf9T3Hd1Bs0zWPjcX3HN9BtBhXuzbY4vUmg0ErJVQA8Do89sT3Z8OuXcD7vB8aWvKOf/681ta6wH5xT7NmWivhOvIWGd+8uVazqwDgNXja8WUnZoWFlWznXbigtbWuI//Nt770kfK6jOLWL7/UanIVADTHmGnMvOkm5fjlRXdUd9RsprQIyed4lODiYiiuIfcv0CylSgUAzXA4Pg/xkHL88pPSLqXdp58C0WJsnz6Aji89XzzjPuRfabZgQUkNxaFDWmmhdgEqnKsdX0znlc6d3SC4ijj+9XAcppm3PW/7ffeB32jWBAa6f55ii3hh0iQX/t+a0eDsWSg6Yv3pnnu0/girAkCF4bHMvYc59d57UHDgcpPQUFg8Y/EMXy3O8WZi6sTU6dgRaCcfyM0F7qOVM81RRSFrRo/2ln4J6hXA4zie+H4v+r24eTPuc3x7kUlNS61qjz+uHN9TOKorOS03LVyI047vOMmoEGsfs1lrqxyoakCP4bGlvoP/I+z77yFZJEdevKi1tb85/fcZ/YYBA4A5LAwKAu7j9qIikEtF5Ntvg/lz8+fr1pWMkVJrrW/MKb/AdePHA9EysFUr5+VIwYNjx0L6gvTIoiKtrXKgXgHcjscd30EKwTt3gkmYI4ODtbO3dPtyWcGyDRuAGGns1u1PBtSU//f662BKTr1r8OCSH3ljIHBXpqFYTfDGjZCSZ47s1Utrq65GvQK4jQpzfC/hmryFGzm+A3unnZjxMeP79tXaij9GCCju7fdQWhpOO76jLFhmiSZjx2pt0fVQAcBlNHP8feRqUU3mroQlsVfW92jffCeJ6RHTIzqasge061GPejNngqmjqeOxY1pbdT1UAHAazZ/4gXxSkfvebs9UPMCX/v4Vp/+NMDY3Nm/ZEnha9k5Odl6Oo7pSv02/bcoUra26ESoAlBvNHf9WAoqKQHfU9o+5cz0/ncdSlCfIp3ft8rz+N6L0K/9Wtr7xBrCfo7VqOSHIntmnb2CLGDq0pNbiyhWtrbsRKgCUGcc+vshl7MaN7nN8R3We49x7x2mv19CX4HPnQP7ImcGD3X1AxLV4zPFbsH/7dmj4QuCjK1d6Tv+yciotIHraNBDJzHjgARcELRSvJSfDvIK0jfv2aW1VWVEB4IY4nhD+W/WRa9fi9rJcR3VeyobUe9PSoNoTV1o0aVLSk69vX6CmqPXEE0Bd0aRpUzCnmFNWrPCcvZ4uSqq5r9Y9ffqUdMSxWj1nx41wHHdOppg6bpwLguz7+xc2XtiYkKCdPc6htgH/FCHAmGfMW7UKxBQS+vVzXebVju8tKbsed/xTtYJDQyF5WfIyLfMWSvv/N4H9+4EMcho3dkKQfcnPYDH84YfB9Ivpl717tbPLOdS5ANcl5gVDUmIiiC1ig1saNqyVQ3fvhsuXrywJDYX0MeljvMHxHa82tujietnZwAGauSWvwJGinHc5KCwMTGmmNC3tdSQq6X/SmbKygANUb93aBYE7RM6MGWA6bDq8dKl2drmGegW4htgYQ3S/fsAg0cf101d/feLLOeIrb0rZLW0nXsvPsmkT7ktRdjzxvSxF2X+9//qUFFxf2dThs8OHfXXJfzVqBVCKwWAw3H03iH+Kbhs3AhmsdqXVlFrqa7vUdxAbbvg0OhroxIXJk10QZO/hp5tgEz16QPo9i9qePKm1da6iagFKy0jzrfnWFSuA0YyqV88FgZ+z7JNPwJpoLerdu6TcUzl+xeM4F8DWjYA5c0C44vyAXCGyYmNhXuj8YUeOaG2du1ABgNMv5IePHQviPHd06OCCoE2knjgBuhT9xtBQSA81h547p7V1VdDx7Qk9og03r1sHTGZStWouCNwj3l+6tORItNde09o6d1OFdwHiLHGWpk3B9lPx8Y8/xvkEEPv+fLHNVi8oSOsOL79S1Rz/uTMjR9x5JxS/6Rfw3nu4fpz3Fbb9739QbVj1pUFBMLvT7E4+2XrsT6nCHwFtfW19Z83Cece3I9vRffBg5fhaEWeJszRqBMX5ft23bsV1x/+A7Px84JJo/8QTldXxHVTBV4DSBJBGMiA83Hk5chovLVkC5vrm+iXHSmtLVXT8unXB1r74wqZNQAI5LVq4INCeYs1e8U1kJJiESfhSj0HnqIIrADGMO6dPd0GAvfmk9Xnr82PGaG1N1XN8h722rcUjs7KABHIefNB1uSKQJIOhxPFzcrS2sqKoQiuA2Pti7wsJAZllu9S+vTMCiJESxLu2E8OGQfrI9BAtP/JVVcd3t73iO04lJkKKyWxdtEhrKyuaKhQAZA/b+RdeAJxsxyTPc+Gtt8A0Mi1kxw7t7FCO7ybHz+bOjAxI+cZsdik/wKepAq8AhrcNb7dpg/N/OEc4ZLOB7h7dPVpmfjlSdgviLgVkZblgz9U4Unb9Lz/dq5f3OL7H7O3Ie2+9BYU9rMefeabkR97YkqxiqAIrAN37NIyOdkHAOE6uWAEp9VPqHzxY8fpXtXbinrJXDmTQ22/DxYcumvr3h6VRS4X3NOfUikq8AoizxFmqVwc6is8HDHBCgL3aS17iJS2e/FUtV9/RaMVT9lqXWJf06QNLxVJx+bLW1noLlTgAyEDrdz17AuvJcSq1d6xs8PbbJTn8X3xRcXpX1aW+aELuhg2eszc9PT390iWtrfU2KnMA+FEkR0Q4P15cYmpGRsXpq574ldte76QSBgBH3Tef81RoqBMCjvO/8+ehsG/xvevXV4C+6olfqe31biphAPA753cuKAj4gjP16zshoIGcmJnp+SWjeuJXbnt9g0oYAIggok8f54eLj/Txa9Z4Tj31xK/c9voWlTAAiK/ZGBbmxEB7N16RLJI9kQqqtvMqt72+SSUKANFbore0agV8Q+1mzco/Xj7PtE2b3N/Pvao5QlWz17epRAFA31rU693b+fFitBidleU+faqaI1Q1eysHlSgAYBBBTgUAe8JPUe2i2ps2ua5GVXMEj9lr76LsbfZWLipBAIjeEr0lMBA4T6eOHZ0QsIuxu3eX9O47dcp5PZTju9nxB17J7NnTe+ytnFSCWgC/ieJoWBjIjrTSORPQcsVt2dkAnHBm/tJqtVqXLBYLkOHm6jxLSXWeaZl5hju/cpeWR8cVz330UWCS7ulyZUza5Dvt2gEZdG/b1n32yjkiOCwMFkcunuENzVQrN5UgAMi2DLIv/f/jzHhhFuasLKAd7cozzhfLcoWAmPGGr5YuBVlgmzFoEHBIrAUgUrrh3CPn7ZWdmBUW5j3t06sGPvwKMFgOljVqAIuo1aOHEwLOsuvYMUhpl9Lu00/LPswXHR9+c+59gShxfK1Rju8F+HAAuOmRmx7p1g2IFuNq13ZCwCt8W56v/r7q+A7kZDk5Ksr9cp21Vzm+N+DDAYBkedyVpp6292RaWQKArzt+KbdxW/XqHpRfRnuV43sTPhoARMl5Bv/t1av8Y+U0XjpzBgKfDnx69+7rX1dpHN9xz6JEVG6u5+e5mtKzEZXjeyE+GAAMBoOhbVucP9b5C76wWK5/Pn1lc3wHor6on5QERBH8/fcVMKHdXm87G1HxWzQIAMZMY2ZEBMQ0NHz60UcQM9v44pkzYCwyFu3dC8a6xrp/9lFPl6PLcWXpL6JE1B8t/Sur4ztI2ZCy4YcfQH4DwcFAMxqcPeuBia6yVzm+N1OBASCmTkyd554DsZOc1auB/mLu/fdTWrYrRjOqQwcQe9mzeTPEZMRk9O9/rRxpkRZnMv7kFKYWFoJupm7m5s2//ryyO76DuFaG6MceAzFc/mPzZpwvl76BvY6lvtb2KspCBZwNOCZ3+MwGDaDQUD3txAkgiO41a5ZhYBxPnToFAS3y5zVuDHlnAubffDPo8sSP33wDpGAS5dH/rPzvtm1gWp5arUePyu/4hmqGai1agO5d8di0aUBdZjz5pBP37QbIiby4aRNYE6wJERGq9ZZvUQGJQFfaV3/ugQdABHG8TI7vYB6rAgLg9Oqbd7VoAaK1LbJzZ+BeWjjzByz7ivUbNsB4XeV0/Nj9sfvvvRfkrOKT48YB20XUkCFABn/1K/l/Nrl1wlewrVgBjW7Kf27IEJiSvnpNYWHF2atwBxUQAOQheahGDRBOLjdsrW2ta9QAMY46vXsDG53TQ0wWk995BwpCLv3iy44/WfaLqFYN8p9pVC8kBEgk0WAAec529vHHgfpikxBABE+7dWL7yUgclQcTEsBUJ3VAYmLJr6puX31fxwdSgXVP2Z6vUwfkMt38rl2B8r63ZsgJx48Dw9lgNuMzju9oay7Hy/HBwcC3tn88+STk/0zyk0+CqMHEBg2Al5jmvln/AMfHwkViyfDhYEo2J69b59EZFRWGDwQAuV4/p0cP4C75V6cSWaLEy02bAkWEN23qBoXc7PgjR4wcERAAfgf9DoaGgphHQO/eYLuj+K6QEKArwXXq/Hq9eJGJbr3B18NelUdX3ex//QtMy03LK/9puVUNHwgADJatw8OBXWhbFPprWe7TvXqVvzrPYDAY7r4b9FbxZu/eYBvGW716gdjOpi5dgGr4+/sDv7Yin1eh9r3HtoICYIh8bMoUyAs69WpyMqxevnp1cXGFaqKoMHwhAOzil5YtNZy/jGW5/fr166fXQ8A/A/4ZFAS6IBHduzfIQv4XHg5iNrOaNwdZjQgAsYzXNbTqV4pk4rp1YOuEHD8eUsekpn75pdZKKSoGXwgAWnGdpX6cJc5Sty7IjdYNISFgGyKGh4cDzWgWGlqyRG/QANjNQAABs7Q25XecIH3PHtB9aPshPh7mnUhr+O67Wiul0AYVAK7FkcK6RdQxGuHSlEvhQ4dCjM2wODwcijsUn+/SBcRGkV2tGojXWKK1yn+KSZh37ABZJIuSksDsbzZv3w5AoNaqKbRGBYBrWST3NG4MRPHyoUMlmYsA1Bc5AMJbz5J3fK03sOONN4AHxNm0NDBh4vBhwB9/rVVUeBsqAFyLY9fAW7E7ugyiz8aNQBppmZnQaHT+p1u2wBSxOlcl5CjKhgoA3st/6P/110Br8eTWrSDDZXh29u8cfdrvHH2R1gorfA8VALTjCIdsNiCT2AMHgADZLzsbbEaMWVmQekvqIx9++JvrF9ldXDm6wm2oAOB5HPvrDeW67duBVZiyskAM1/8lOxtSGqVE/vCD1koqqiYqALiPD8jOzwcekTs3bwZRwPSsLLBNFC9t2gTmyNRWFy4AjbRWVKFwoAJAuZHJzDxyBMST4smsLJBD5JDsbDCbzObdu4F93PW74hgTaVrrrFD8MSoAXMsaVlitgE5u3bsXRC8Rtno1FL8ij65dC6k1U2t+991vrrdg0VplhcI5VACA2Qw4dAikoGNWFsiHZdCWLcC7LL5wAfRv6igshMD0n5796SetlVUo3EkFdAQyHDAcCAsD3UKxwH4El29yme9Onwa6iH6xsWCKMkWtXKm1UgqFK/hgV2DNqMEdDRsC7eWDy5eXNDd9/HGtlVIoXMGDAcCYacy86SYQDUXD+HitDXUj9p564hjzEhK0VkahcAUPBACH4/MQD1ksIKbzSufOWhvqfmQMG5o311oLhcIV3BgAqorjl/IzP6sOOQrfxg27ACNHjhxZqxaIJuRu2ABMJ6dSO76DD/ggKUlrJRQKV3AhAFz9xKeyP/Hb0fLSJZC1uTk+vuTEmzVrtFZKoXAFJ7YBPbXUdxwiqQ+VSVOnan1jfsX2iS7VagWb0WY8eBBSU1NTPXKklkJR4ZQjADiW+v7D/WplZwMZFHbt6gYd7N1nCwZeyezZExbPWDzjF23bfyoUVYQyBADl+ApFZeVPAoByfIWisvMHAUA5vkJRVfhNAFCOr1BUNQSMyR2TW7MmFGZeidy8Gbednef4qs/7vB8aWrJtduGC1gYrFIpf0UHh7VceT0xEOb5CUeXQAX+Th/v2dYMs+1L/8rzL88LClOMrFN6PDlgr9gQEOC/C8cSXc8RXjz+u3vEVCt9BB3QXkb9rP11G1FJfofB1dKC7vTgvIQG4lYCiojKMcZydpxxfofBxdDDvRFrgu++CvIdW3boBLdi/fTvQl+Bz54Cz7Dp2DPhKfD19OlyYffG7kBDl+AqF7/P/0pUQwVKTwhMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMDgtMDhUMTA6NDA6MDkrMDA6MDDgMPqfAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTA4LTA4VDEwOjQwOjA5KzAwOjAwkW1CIwAAACh0RVh0ZGF0Z
-                                                                
-    Tp0aW1lc3RhbXAAMjAyMi0wOC0wOFQxMDo0MDowOSswMDowMMZ4Y/wAAAAASUVORK5CYII="/>
-  </defs>
-                                </svg>
-    
-                            </span>
+                        <svg width="144" height="128" viewBox="0 0 144 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_175_4114)">
+                            <rect x="15.9998" y="16" width="112" height="95.6667" rx="10.6667" fill="white" shape-rendering="crispEdges"/>
+                            <g clip-path="url(#clip0_175_4114)">
+                            <path d="M61.7381 98.8724C68.3389 98.8724 73.6639 93.6974 73.6639 87.2826V75.6927H61.7381C55.1373 75.6927 49.8123 80.8677 49.8123 87.2826C49.8123 93.6974 55.1373 98.8724 61.7381 98.8724Z" fill="#0ACF83"/>
+                            <path d="M49.8123 64.1029C49.8123 57.6881 55.1373 52.5131 61.7381 52.5131H73.6639V75.6927H61.7381C55.1373 75.6927 49.8123 70.5177 49.8123 64.1029Z" fill="#A259FF"/>
+                            <path d="M49.8123 40.9232C49.8123 34.5084 55.1373 29.3334 61.7381 29.3334H73.6639V52.5131H61.7381C55.1373 52.5131 49.8123 47.3381 49.8123 40.9232Z" fill="#F24E1E"/>
+                            <path d="M73.6639 29.3334H85.5897C92.1904 29.3334 97.5154 34.5084 97.5154 40.9232C97.5154 47.3381 92.1904 52.5131 85.5897 52.5131H73.6639V29.3334Z" fill="#FF7262"/>
+                            <path d="M97.5154 64.1029C97.5154 70.5177 92.1904 75.6927 85.5897 75.6927C78.9889 75.6927 73.6639 70.5177 73.6639 64.1029C73.6639 57.6881 78.9889 52.5131 85.5897 52.5131C92.1904 52.5131 97.5154 57.6881 97.5154 64.1029Z" fill="#1ABCFE"/>
+                            </g>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_175_4114" x="-0.000183105" y="0" width="144" height="127.667" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset/>
+                            <feGaussianBlur stdDeviation="8"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_175_4114"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_175_4114" result="shape"/>
+                            </filter>
+                            <clipPath id="clip0_175_4114">
+                            <rect width="71" height="69" fill="white" transform="translate(36.4998 29.3334)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            
                     </i>
                     <h2>UI & UX Design</h2>
                     <p>Dealing with the look and feel of a product, 
@@ -157,7 +158,7 @@
                         Both User interface and user Experience are essential to a user-centric digital product </p>
                 </div>
 
-                <div class="container card">
+                <div class="container card skill-card">
                     <i>
                         <svg width="145" height="119" viewBox="0 0 145 119" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_d_1_904)">
@@ -184,6 +185,107 @@
                             </svg>    
                     </i>
                     <h2>React</h2>
+                    <p>One of the most commonly preferred open-source JavaScript library for building suer interfaces or UI components. This library is used to cread a web based single-page applications where the content is dynamically updated as the user interacts with  application. </p>
+                </div>
+                <div class="container card skill-card">
+                    <i>
+                        <svg width="144" height="113" viewBox="0 0 144 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_175_4114)">
+                            <rect x="15.9998" y="16" width="112" height="80.6667" rx="10.6667" fill="white" shape-rendering="crispEdges"/>
+                            <g clip-path="url(#clip0_175_4114)">
+                            <path d="M95.191 52.6437C95.1672 52.6437 95.1439 52.6501 95.1241 52.6622L94.0428 53.2402C94.0224 53.2517 94.0057 53.2679 93.9942 53.2871C93.9827 53.3064 93.9769 53.328 93.9773 53.3499V54.5058C93.9773 54.5548 94.0027 54.5919 94.0428 54.6164L95.1241 55.1935C95.1439 55.2055 95.1672 55.212 95.191 55.212C95.2147 55.212 95.238 55.2055 95.2578 55.1935L96.3373 54.6164C96.3579 54.6046 96.3748 54.5883 96.3865 54.5688C96.3982 54.5494 96.4043 54.5276 96.4041 54.5054V53.3507C96.4043 53.3287 96.3982 53.3071 96.3865 53.2879C96.3748 53.2686 96.3578 53.2525 96.3373 53.2411L95.2573 52.6627C95.2377 52.6506 95.2146 52.6437 95.191 52.6437ZM71.6403 59.5557C71.4435 59.5557 71.2476 59.5996 71.0807 59.6856L65.7573 62.5236C65.5867 62.6152 65.4452 62.7461 65.347 62.9033C65.2489 63.0605 65.1974 63.2385 65.1978 63.4196V69.0825C65.1978 69.4512 65.4107 69.7954 65.7573 69.9802L67.1586 70.7168C67.8389 71.0239 68.0791 71.0231 68.3856 71.0231C69.3858 71.0231 69.9597 70.4582 69.9597 69.4875V63.8997C69.9591 63.8608 69.9421 63.8237 69.9122 63.7961C69.8822 63.7684 69.8418 63.7525 69.7993 63.7516H69.1199C69.0772 63.7523 69.0365 63.7681 69.0064 63.7958C68.9763 63.8234 68.9591 63.8607 68.9585 63.8997V69.4887C68.9585 69.9186 68.4658 70.3493 67.679 69.981L66.2247 69.2069C66.1713 69.1824 66.1441 69.12 66.1441 69.0711V63.407C66.1441 63.358 66.1713 63.2973 66.2247 63.2724L71.5462 60.4471C71.5863 60.4226 71.6536 60.4226 71.7071 60.4471L77.03 63.2724C77.083 63.2973 77.1093 63.3458 77.1093 63.4074V69.0706C77.1093 69.1318 77.083 69.182 77.03 69.2065L71.7071 72.0444C71.667 72.0689 71.5997 72.0689 71.5462 72.0444L70.186 71.2939C70.1459 71.2695 70.0925 71.2572 70.0524 71.2817C69.679 71.4783 69.6135 71.504 69.2531 71.6145C69.1729 71.639 69.0397 71.6875 69.3061 71.8225L71.0807 72.7937C71.254 72.8793 71.4402 72.9283 71.6403 72.9283C71.8403 72.9283 72.0399 72.8798 72.1999 72.8186L77.5232 69.9806C77.694 69.8887 77.8355 69.7574 77.9336 69.5999C78.0318 69.4425 78.0832 69.2642 78.0828 69.0829V63.4196C78.0828 63.0509 77.8699 62.7079 77.5232 62.5236L72.1999 59.6856C72.0285 59.5993 71.8359 59.5546 71.6403 59.5557ZM79.951 62.1418C79.6778 62.1428 79.4162 62.243 79.2237 62.4204C79.0313 62.5979 78.9236 62.838 78.9245 63.088C78.9237 63.338 79.0314 63.578 79.2239 63.7554C79.4164 63.9327 79.6779 64.0329 79.951 64.0339C80.5119 64.0339 80.978 63.604 80.978 63.088C80.9765 62.8386 80.8681 62.5997 80.676 62.4227C80.4839 62.2458 80.2235 62.1446 79.951 62.1418ZM79.9372 62.3017C80.0508 62.3004 80.1636 62.3198 80.2689 62.3587C80.3743 62.3977 80.4701 62.4555 80.5509 62.5286C80.6317 62.6018 80.6957 62.6889 80.7394 62.785C80.783 62.881 80.8054 62.984 80.8051 63.088C80.8051 63.5183 80.4179 63.8871 79.9376 63.8871C79.4711 63.8871 79.084 63.5302 79.084 63.088C79.084 62.6459 79.4841 62.3017 79.9372 62.3017ZM79.5643 62.5594V63.6403H79.792V63.2116H79.992C80.0722 63.2116 80.0985 63.2361 80.1118 63.2973C80.1118 63.3099 80.1515 63.5799 80.1515 63.6289H80.3912C80.3644 63.5799 80.3511 63.4323 80.3377 63.3462C80.3248 63.2112 80.3119 63.1129 80.1515 63.1007C80.2317 63.0758 80.3649 63.0391 80.3649 62.8425C80.3649 62.5598 80.0976 62.5598 79.9648 62.5598L79.5643 62.5594ZM79.7648 62.7316H79.951C80.0183 62.7316 80.1243 62.7316 80.1243 62.8788C80.1243 62.9277 80.0985 63.0269 79.951 63.0269H79.7643L79.7648 62.7316ZM73.095 63.5795C71.5739 63.5795 70.6668 64.1693 70.6668 65.1645C70.6668 66.2335 71.5739 66.5272 73.0282 66.6626C74.7751 66.8225 74.9088 67.0562 74.9088 67.3756C74.9088 67.9282 74.4276 68.1619 73.307 68.1619C71.8929 68.1619 71.5863 67.8421 71.4794 67.1912C71.4794 67.1174 71.414 67.0688 71.3338 67.0688H70.64C70.5977 67.0693 70.5572 67.085 70.5273 67.1125C70.4975 67.1401 70.4807 67.1773 70.4806 67.2161C70.4806 68.0514 70.9604 69.0344 73.2955 69.0344C74.9756 69.0344 75.9496 68.4193 75.9496 67.3384C75.9496 66.2816 75.1752 65.9994 73.5352 65.8028C71.8804 65.6062 71.7076 65.4957 71.7076 65.1396C71.7076 64.8447 71.8542 64.452 73.0812 64.452C74.175 64.452 74.588 64.6734 74.7484 65.3489C74.7564 65.3793 74.7752 65.4066 74.8017 65.4264C74.8283 65.4462 74.8612 65.4575 74.8954 65.4585H75.602C75.6426 65.4585 75.6827 65.4345 75.7099 65.41C75.7347 65.3774 75.7483 65.3388 75.7491 65.2991C75.6426 64.1199 74.8028 63.5795 73.095 63.5795Z" fill="#5FA04E"/>
+                            <path d="M82.1736 39.7385C82.1169 39.738 82.061 39.7509 82.0114 39.7761C81.9598 39.8036 81.9167 39.8428 81.8865 39.89C81.8562 39.9371 81.8397 39.9906 81.8385 40.0452V48.0309C81.8385 48.1043 81.7971 48.1786 81.7173 48.2275C81.6805 48.2456 81.6393 48.2551 81.5975 48.2551C81.5556 48.2551 81.5145 48.2456 81.4776 48.2275L80.0644 47.4787C79.9607 47.4243 79.8433 47.3957 79.7238 47.3957C79.6043 47.3957 79.4868 47.4243 79.3831 47.4787L73.7284 50.4888C73.6237 50.5428 73.5365 50.6211 73.4756 50.7159C73.4146 50.8106 73.3821 50.9184 73.3813 51.0283V57.0358C73.3813 57.2569 73.5149 57.4662 73.7284 57.5767L79.3841 60.5868C79.4877 60.6411 79.605 60.6697 79.7245 60.6697C79.8439 60.6697 79.9612 60.6411 80.0649 60.5868L85.7201 57.5767C85.9335 57.4662 86.0672 57.2569 86.0672 57.0358V42.0605C86.0672 41.8272 85.9335 41.6176 85.7201 41.5075L82.346 39.7761C82.2927 39.7516 82.2334 39.7387 82.1736 39.7385ZM48.8087 47.2336C48.7022 47.2336 48.5957 47.269 48.5026 47.318L42.8469 50.3171C42.7407 50.3725 42.6526 50.4529 42.5916 50.5499C42.5306 50.6469 42.4989 50.757 42.4998 50.8689L42.5137 58.9275C42.5137 59.0385 42.5796 59.149 42.6865 59.1984C42.736 59.2283 42.794 59.2443 42.8534 59.2443C42.9127 59.2443 42.9707 59.2283 43.0202 59.1984L46.3823 57.4295C46.5957 57.3189 46.728 57.1097 46.728 56.8886V53.117C46.728 52.896 46.8617 52.6867 47.0756 52.5762L48.5026 51.8147C48.6091 51.7531 48.7299 51.7287 48.8497 51.7287C48.9696 51.7287 49.0899 51.7531 49.1834 51.8147L50.6105 52.5762C50.8239 52.6867 50.9576 52.896 50.9576 53.117V56.8886C50.9576 57.1097 51.0903 57.3189 51.3033 57.4295L54.6386 59.1984C54.6905 59.2284 54.7507 59.2444 54.8122 59.2444C54.8736 59.2444 54.9338 59.2284 54.9857 59.1984C55.0387 59.1718 55.0828 59.1326 55.1133 59.0849C55.1438 59.0372 55.1596 58.9828 55.159 58.9275V50.8689C55.159 50.6478 55.0254 50.4386 54.8115 50.3276L49.1696 47.318C49.0747 47.2714 48.9707 47.2426 48.8635 47.2332L48.8087 47.2336ZM95.2099 47.3222C95.0933 47.3222 94.9776 47.35 94.8706 47.4057L89.214 50.4141C89.0006 50.5246 88.8683 50.7339 88.8683 50.9554V56.9629C88.8683 57.1839 89.0006 57.3932 89.214 57.5037L94.8301 60.4513C94.9312 60.5056 95.0463 60.5343 95.1636 60.5343C95.2808 60.5343 95.3959 60.5056 95.497 60.4513L98.8988 58.7077C98.9516 58.6811 98.9956 58.6419 99.0261 58.5942C99.0565 58.5465 99.0723 58.4921 99.0716 58.4369C99.0721 58.3818 99.0563 58.3276 99.0258 58.2801C98.9954 58.2326 98.9515 58.1934 98.8988 58.1669L93.2168 55.1564C93.1651 55.1286 93.1221 55.0892 93.0918 55.0418C93.0616 54.9945 93.0451 54.9408 93.0439 54.886V53.0061C93.0433 52.951 93.059 52.8967 93.0895 52.8492C93.1199 52.8016 93.1639 52.7625 93.2168 52.7361L94.9914 51.8021C95.0433 51.772 95.1035 51.7561 95.1649 51.7561C95.2264 51.7561 95.2866 51.772 95.3385 51.8021L97.1113 52.7357C97.1631 52.7634 97.2064 52.8027 97.2369 52.8501C97.2674 52.8974 97.2841 52.9511 97.2855 53.0061V54.4805C97.2855 54.5915 97.3519 54.702 97.4583 54.751C97.5103 54.7811 97.5706 54.7971 97.6321 54.7971C97.6936 54.7971 97.7539 54.7811 97.8059 54.751L101.167 52.9453C101.27 52.8903 101.355 52.8112 101.413 52.7161C101.472 52.6209 101.502 52.5133 101.5 52.4041V50.9423C101.5 50.7212 101.367 50.5132 101.167 50.4023L95.5505 47.4053C95.4469 47.351 95.3297 47.3222 95.2103 47.3217L95.2099 47.3222ZM79.7238 51.8084C79.7537 51.8084 79.7841 51.8147 79.8113 51.8274L81.7445 52.8593C81.798 52.8837 81.8252 52.9445 81.8252 52.9939V55.0577C81.8252 55.1193 81.798 55.169 81.7445 55.1935L79.8109 56.2254C79.7838 56.2375 79.754 56.2438 79.7238 56.2438C79.6936 56.2438 79.6638 56.2375 79.6367 56.2254L77.703 55.1935C77.6495 55.169 77.6224 55.107 77.6224 55.0577V52.9939C77.6224 52.9323 77.65 52.8837 77.703 52.8589L79.6367 51.8274C79.6638 51.8149 79.6934 51.8084 79.7238 51.8084Z" fill="#333333"/>
+                            <path d="M64.6165 47.4289C64.513 47.3745 64.3957 47.3459 64.2764 47.3459C64.157 47.3459 64.0397 47.3745 63.9362 47.4289L58.3201 50.4145C58.2171 50.4693 58.1318 50.5483 58.0732 50.6432C58.0145 50.7382 57.9846 50.8458 57.9864 50.9549V56.9375C57.9864 57.159 58.1201 57.3678 58.3201 57.4783L63.9362 60.4635C64.0397 60.5178 64.157 60.5464 64.2764 60.5464C64.3957 60.5464 64.513 60.5178 64.6165 60.4635L70.2321 57.4783C70.4455 57.3678 70.5659 57.159 70.5659 56.9375V50.9549C70.5659 50.7338 70.4322 50.5246 70.2321 50.4145L64.6165 47.4289Z" fill="url(#paint0_linear_175_4114)"/>
+                            <path d="M70.2455 50.4145L64.6031 47.4288C64.5478 47.4032 64.4897 47.3827 64.4298 47.3677L58.1067 57.3307C58.1602 57.3923 58.2265 57.4412 58.2934 57.4783L63.9362 60.4635C64.0961 60.5496 64.2828 60.574 64.4561 60.5247L70.3925 50.525C70.3535 50.4783 70.3031 50.4404 70.2455 50.4145Z" fill="url(#paint1_linear_175_4114)"/>
+                            <path d="M70.2455 57.4779C70.4059 57.3918 70.5258 57.2446 70.5792 57.0847L64.4027 47.355C64.2432 47.3305 64.0694 47.3428 63.9228 47.4288L58.3201 50.4018L64.363 60.5491C64.4428 60.5369 64.5363 60.5124 64.6165 60.4753L70.2455 57.4779Z" fill="url(#paint2_linear_175_4114)"/>
+                            </g>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_175_4114" x="-0.000183105" y="0" width="144" height="112.667" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset/>
+                            <feGaussianBlur stdDeviation="8"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_175_4114"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_175_4114" result="shape"/>
+                            </filter>
+                            <linearGradient id="paint0_linear_175_4114" x1="66.5633" y1="49.652" x2="62.126" y2="59.4808" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#3F873F"/>
+                            <stop offset="0.33" stop-color="#3F8B3D"/>
+                            <stop offset="0.637" stop-color="#3E9638"/>
+                            <stop offset="0.934" stop-color="#3DA92E"/>
+                            <stop offset="1" stop-color="#3DAE2B"/>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_175_4114" x1="63.4229" y1="54.6448" x2="76.8232" y2="43.8937" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.138" stop-color="#3F873F"/>
+                            <stop offset="0.402" stop-color="#52A044"/>
+                            <stop offset="0.713" stop-color="#64B749"/>
+                            <stop offset="0.908" stop-color="#6ABF4B"/>
+                            </linearGradient>
+                            <linearGradient id="paint2_linear_175_4114" x1="57.781" y1="53.9441" x2="70.7759" y2="53.9441" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.092" stop-color="#6ABF4B"/>
+                            <stop offset="0.287" stop-color="#64B749"/>
+                            <stop offset="0.598" stop-color="#52A044"/>
+                            <stop offset="0.862" stop-color="#3F873F"/>
+                            </linearGradient>
+                            <clipPath id="clip0_175_4114">
+                            <rect width="59" height="54" fill="white" transform="translate(42.4998 29.3334)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            
+                    </i>
+                    <h2>Node.js</h2>
+                    <p>One of the most commonly preferred open-source JavaScript library for building suer interfaces or UI components. This library is used to cread a web based single-page applications where the content is dynamically updated as the user interacts with  application. </p>
+                </div>
+                <div class="container card skill-card">
+                    <i>
+                        <svg width="144" height="118" viewBox="0 0 144 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_175_4114)">
+                            <rect x="15.9998" y="16" width="112" height="85.6667" rx="10.6667" fill="white" shape-rendering="crispEdges"/>
+                            <path d="M73.143 84.6459L71.7583 84.1868C71.7583 84.1868 71.9427 77.1805 69.4075 76.6882C67.7481 74.756 69.6527 -5.80297 75.7187 76.4135C74.5678 76.9973 73.6871 78.0035 73.261 79.2216C73.0325 81.0206 72.993 82.8386 73.143 84.6459Z" fill="url(#paint0_linear_175_4114)"/>
+                            <path d="M73.8915 77.8775C77.5782 75.1022 80.4016 71.3377 82.0335 67.0213C83.6654 62.7049 84.0388 58.0141 83.1103 53.4939C80.3999 41.5372 73.9818 37.6063 73.2904 36.1055C72.6939 35.171 72.1847 34.1835 71.7693 33.1555L72.2801 66.4702C72.2801 66.4702 71.2218 76.6514 73.8915 77.8775Z" fill="url(#paint1_linear_175_4114)"/>
+                            <path d="M71.054 78.32C71.054 78.32 59.7684 70.6334 60.4211 57.0357C60.4819 52.9364 61.4219 48.8979 63.1773 45.193C64.9327 41.4881 67.4629 38.203 70.5967 35.5597C70.9629 35.2486 71.2539 34.8585 71.4477 34.4188C71.6416 33.979 71.7332 33.5011 71.7159 33.0209C72.4183 34.5327 72.304 55.5939 72.3778 58.0572C72.6636 67.6391 71.8449 76.5112 71.054 78.32Z" fill="url(#paint2_linear_175_4114)"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_175_4114" x="-0.000183105" y="0" width="144" height="117.667" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset/>
+                            <feGaussianBlur stdDeviation="8"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_175_4114"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_175_4114" result="shape"/>
+                            </filter>
+                            <linearGradient id="paint0_linear_175_4114" x1="63.835" y1="59.2986" x2="79.7497" y2="64.6991" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.231" stop-color="#999875"/>
+                            <stop offset="0.563" stop-color="#9B9977"/>
+                            <stop offset="0.683" stop-color="#A09F7E"/>
+                            <stop offset="0.768" stop-color="#A9A889"/>
+                            <stop offset="0.837" stop-color="#B7B69A"/>
+                            <stop offset="0.896" stop-color="#C9C7B0"/>
+                            <stop offset="0.948" stop-color="#DEDDCB"/>
+                            <stop offset="0.994" stop-color="#F8F6EB"/>
+                            <stop offset="1" stop-color="#FBF9EF"/>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_175_4114" x1="69.6711" y1="32.9175" x2="76.7069" y2="76.8521" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#48A547"/>
+                            <stop offset="1" stop-color="#3F9143"/>
+                            </linearGradient>
+                            <linearGradient id="paint2_linear_175_4114" x1="59.4503" y1="58.3817" x2="78.3314" y2="52.0584" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#41A247"/>
+                            <stop offset="0.352" stop-color="#4BA74B"/>
+                            <stop offset="0.956" stop-color="#67B554"/>
+                            <stop offset="1" stop-color="#69B655"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>
+                              
+                    </i>
+                    <h2>MongoDB</h2>
                     <p>One of the most commonly preferred open-source JavaScript library for building suer interfaces or UI components. This library is used to cread a web based single-page applications where the content is dynamically updated as the user interacts with  application. </p>
                 </div>
             </div>
