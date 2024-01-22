@@ -7,6 +7,7 @@
 }
 h1,h2,h3,p,a{
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 .btn{
    
@@ -47,6 +48,14 @@ h1,h2,h3,p,a{
     margin: 0 .8rem;
     font-size: 21.33px;
 }
+.menu ul li a{
+    color: var(--Primary, #5E3BEE);
+    font-family: 'Roboto', sans-serif;
+font-size: 21.333px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 32px */
+}
 .home-page{
     padding-top: 8rem;
     width: 100%;
@@ -62,7 +71,7 @@ h1,h2,h3,p,a{
 .text-1{
     color: var(--Heading-color, #282938);
 text-align: left;
-font-family: Roboto;
+font-family: 'Roboto', sans-serif;
 font-size: 36px;
 font-style: normal;
 font-weight: 600;
@@ -89,7 +98,7 @@ line-height: 150%;
 }
 .hero-text h1{
     color: #282938;
-font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 font-size: 48px;
 font-style: normal;
 font-weight: 600;
@@ -112,7 +121,7 @@ margin: 2rem 0;
 }
 .purple{
     color: #503AE7;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 80px;
     font-style: normal;
     font-weight: 700;
@@ -123,10 +132,8 @@ margin: 2rem 0;
     display: none;
 }
 /*=================               My Skills Section             ====================*/
-.skills-section{
-    padding: 4rem;
-}
 .skills-section h1{
+    padding-left: 4.77rem;
     color: var(--Heading-color, #282938);
 font-family: poppins;
 font-size: 64px;
@@ -137,12 +144,12 @@ margin: 5.92rem 0;
 }
 .skill-card{
     display: flex;
-height: 492px;
+/* height: 492px; */
 padding: 32px;
 flex-direction: column;
 align-items: flex-start;
 gap: 32px;
-flex: 1 0 0;
+/* flex: 1 0 0; */
 border-radius: 10.667px;
 background: var(--BG-Shade, #F5FCFF);
 }
@@ -151,7 +158,7 @@ background: var(--BG-Shade, #F5FCFF);
 }
 .skill-card h1{
     color: var(--Body, #1C1E53);
-font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 font-size: 21.333px;
 font-style: normal;
 font-weight: 400;
@@ -173,7 +180,7 @@ line-height: 150%; /* 32px */
     width: 100%;
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 25%;
+    grid-auto-columns: 23.33%;
     gap: 2.37rem;
     overflow-x: scroll;
 }
@@ -184,6 +191,7 @@ line-height: 150%; /* 32px */
 }
 .about-wrapper{
     display: flex;
+    margin: 1rem 0;
 }
 .about-image-wrapper{
     display: flex;
@@ -200,34 +208,75 @@ line-height: 150%; /* 32px */
     width: 50%;
 }
 .about-text-wrapper h1{
-    margin: 2rem 0;
+    color: var(--Heading-color, #282938);
+    font-family: 'Roboto', sans-serif;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 76.8px */
+margin: 1.5rem 0;
+}
+.about-text-wrapper p{
+    color: var(--Body, #1C1E53);
+    font-family: 'Roboto', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 36px */
 }
 
 /* ================================================ Portfolio Section ========================================*/
 .portfolio-section{
-    padding: 4rem;
+    padding: 4.7777rem;
+    width: 100%;
+}
+.portfolio-section h1{
+    color: var(--Heading-color, #282938);
+font-family: 'Roboto', sans-serif;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 76.8px */
 }
 .manchester-uni{
    padding: 2rem;
-    width: 410px;
+    width: 70%;
     box-shadow: 11px 15px 10px -4px rgba(0,0,0,0.1);
     border-radius: 12px;
 }
 .manchester-uni img{
-    width: 400px;
+    width: 90%;
 }
 .manchester-uni h1{
     margin: 2rem 0;
+    color: var(--Heading-color, #282938);
+font-family: 'Roboto', sans-serif;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 44.8px */
 }
-
+.projects{
+    width: 100%;
+   display: grid;
+   grid-auto-flow: column;
+   grid-auto-columns: 33.33%;
+   overflow-x: auto;
+}
 /* =============================================      Testimonials ========================*/
 .customer-testimonials{
     margin: 2rem 0;
-    padding: 4rem;
+    padding: 4.7777rem;
     background-color: #EEF4FA;
 }
 .customer-testimonials h1{
     margin: 2rem 0;
+        color: var(--Heading-color, #282938);
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 76.8px */
 }
 .test-wrap{
     display: flex;
@@ -257,7 +306,16 @@ line-height: 150%; /* 32px */
 
 /* ======================================        Blogs Section               =====================*/
 .blog-section{
-    padding: 4rem;
+    padding: 4.777rem;
+}
+.blog-section h1{
+    margin: 2rem 0;
+    color: var(--Heading-color, #282938);
+font-family: 'Roboto', sans-serif;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 76.8px */
 }
 .blogs{
     display: flex;
@@ -267,9 +325,10 @@ line-height: 150%; /* 32px */
 }
 .blog{
     width: 25%;
-    padding: 2rem;
-    box-shadow: 11px 15px 10px -4px rgba(0,0,0,0.1);
-    border-radius: 8px;
+    padding: 2rem 2rem 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 10px 9.4px 0px rgba(0, 0, 0, 0.25);
 }
 .blog img{
     width: 80%;
@@ -284,6 +343,17 @@ line-height: 150%; /* 32px */
 }
 .blog a{
     text-decoration: none;
+}
+.blog a .buttons{
+    padding-top: .5rem;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.blog a .buttons .bottom{
+    display: flex;
+    gap: 2px;
+    margin: .5rem 0;
 }
 
 /*=====================              Single Blog Page                ================*/
@@ -365,6 +435,16 @@ line-height: 150%; /* 32px */
     }
     .home-page{
         flex-direction: column;
+        width: 100%;
+    }
+    .hero-text{
+        width: 80%;
+    }
+    .hero-text h1{
+        font-size: 32px;
+    }
+    .purple{
+        font-size: 41px;
     }
     .nav-wrapper{
         padding: .5rem 2rem;
@@ -378,21 +458,23 @@ line-height: 150%; /* 32px */
     .hero-text{
         padding-left: 2rem;
     }
-    .about-wrapper{
-        flex-direction: column;
-    }
     .about-text-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         margin-left: 1rem;
         width: 100%;
+        align-self: center;
     }
     .about-image-wrapper{
-        width: 100%;
+        display: none;
     }
     .portfolio-section{
-        padding: 1rem;
+        padding: 4rem;
     }
-    .portfolio-title{
-        margin-left: 2rem;
+    .portfolio-section h1{
+        font-size: 24px;
     }
     .manchester-uni img{
         width: 260px;
@@ -403,18 +485,39 @@ line-height: 150%; /* 32px */
     .testimonial-1{
         width: 80%;
     }
+    .customer-testimonials h1{
+        font-size: 22px;
+    }
     .about-text-wrapper{
         width: 340px;
         padding: 2rem;
+    }
+    .about-text-wrapper h1{
+    font-size: 22px;
+    }
+    .about-text-wrapper p{
+        font-size: 16px;
     }
     .blogs{
         flex-direction: column;
         width: 100%;
     }
-   .cards-wrapper{
-    grid-auto-flow: column;
-    grid-auto-columns: 80%;
-   }
+    .skills-section{
+        padding: 2rem;
+        padding-left: 4rem;
+    }
+    .skill-card{
+        width: 80%;
+    }
+    .cards-wrapper{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2.37rem;
+        
+    }
     .blog{
         width: 90%;
         margin: 4rem 0;
@@ -424,6 +527,9 @@ line-height: 150%; /* 32px */
     }
     .blog-section{
         padding: 2rem;
+    }
+    .blog-section h1{
+        font-size: 22px;
     }
     .contact-form{
        display: flex;
@@ -438,12 +544,31 @@ line-height: 150%; /* 32px */
     .see-all .see-all-btn{
         font-size: 16px;
     }
+    .skills-section h1{
+        font-size: 22px;
+    }
+    .projects{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
   }
 
   @media only screen and (max-width: 900px){
     .menu{
         display: none;
         
+    }
+    .home-page{
+        flex-direction: column;
+        width: 100%;
+    }
+    .hero-text{
+        width: 90%;
+    }
+    .profile-picture{
+        width: 90%;
     }
     .font-46{
         font-size: 24px;
