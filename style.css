@@ -9,6 +9,9 @@ h1,h2,h3,p,a{
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
+label{
+    font-family: 'Roboto', sans-serif;
+}
 .btn{
    
     padding: 15px 30px;
@@ -228,7 +231,7 @@ line-height: 150%; /* 36px */
 /* ================================================ Portfolio Section ========================================*/
 .portfolio-section{
     padding: 4.7777rem;
-    width: 100%;
+    width: 80%;
 }
 .portfolio-section h1{
     color: var(--Heading-color, #282938);
@@ -320,18 +323,18 @@ line-height: 120%; /* 76.8px */
 .blogs{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 2;
 }
 .blog{
-    width: 25%;
+    width: 28%;
     padding: 2rem 2rem 0;
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 10px 9.4px 0px rgba(0, 0, 0, 0.25);
 }
 .blog img{
-    width: 80%;
+    width: 90%;
 }
 .blog h1{
     margin: 2rem 0;
@@ -383,6 +386,7 @@ line-height: 120%; /* 76.8px */
 
 /*=====================              Contact Me Section                ================*/
 .contact-me-section{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -395,10 +399,13 @@ line-height: 120%; /* 76.8px */
     font-size: 24px;
     margin: 0 0 2rem 0;
 }
+.contact-wrapper{
+    width: 80%;
+}
 .contact-form{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
     font-size: 21.33px;
     width: 100%;
 }
@@ -407,11 +414,21 @@ line-height: 120%; /* 76.8px */
 }
 .input{
     width: 100%;
-    height: 24px;
+    height: 64px;
+    border-radius: 8px;
+border: 1.333px solid var(--Primary, #5E3BEE);
+background: #FFF;
+    margin: .5rem 0;
 }
 .text-area{
     width: 100%;
+    border-radius: 10px;
+    margin: .5rem 0;
     
+}
+.text-area::placeholder{
+    padding: 1rem;
+    font-size: 14px;
 }
 .select{
     width: 100%;
@@ -453,7 +470,7 @@ line-height: 120%; /* 76.8px */
         width: 80%;
     }
     .profile-picture{
-        width: 500px;
+        width: 80%;
     } 
     .hero-text{
         padding-left: 2rem;
@@ -471,7 +488,9 @@ line-height: 120%; /* 76.8px */
         display: none;
     }
     .portfolio-section{
-        padding: 4rem;
+        padding: 2rem;
+        width: 90%;
+        background-color: green;
     }
     .portfolio-section h1{
         font-size: 24px;
@@ -486,7 +505,7 @@ line-height: 120%; /* 76.8px */
         width: 80%;
     }
     .customer-testimonials h1{
-        font-size: 22px;
+        font-size: 16px;
     }
     .about-text-wrapper{
         width: 340px;
@@ -516,17 +535,12 @@ line-height: 120%; /* 76.8px */
         justify-content: center;
         flex-direction: column;
         gap: 2.37rem;
-        
     }
-    .blog{
-        width: 90%;
-        margin: 4rem 0;
-    }
-    .blog img{
-        width: 100%;
-    }
+    /* .blog img{
+        width: 80%;
+    } */
     .blog-section{
-        padding: 2rem;
+        width: 80%;
     }
     .blog-section h1{
         font-size: 22px;
@@ -535,7 +549,7 @@ line-height: 120%; /* 76.8px */
        display: flex;
        gap: 1rem;
        flex-direction: column;
-       width: 350x;
+       width: 80%;
     }
     .contact-me-section h2{
         font-size: 16px;
@@ -552,7 +566,9 @@ line-height: 120%; /* 76.8px */
         flex-direction: column;
     }
 
-    
+    .contact-wrapper{
+        width: 80%;
+    }
   }
 
   @media only screen and (max-width: 900px){
@@ -577,7 +593,7 @@ line-height: 120%; /* 76.8px */
         flex-direction: column;
     }
     .about-text-wrapper{
-        width: 400px;
+        width: 80%;
     }
     .contact-me-section{
         display: flex;
@@ -588,4 +604,34 @@ line-height: 120%; /* 76.8px */
         grid-auto-flow: column;
         grid-auto-columns: 50%;
        }
+       .contact-wrapper{
+        width: 80%;
+       }
+       .blog{
+        width: 50%;
+        margin: 1rem 0;
+    }
+    .projects{
+        width: 80%;
+       display: flex;
+       /* grid-auto-flow: column;
+       grid-auto-columns: 50%;
+       overflow-x: auto; */
+       flex-direction: column;
+    }
+    .blogs{
+        width: 100%;
+       display: grid;
+       grid-auto-flow: column;
+       grid-auto-columns: 80%;
+       overflow-x: auto;
+       gap: .5rem;
+    }
+    .blog h1{
+        font-size: 16px;
+    }
+    .blog-section{
+        width: 90%;
+        padding: 1rem 0;
+    }
   }
