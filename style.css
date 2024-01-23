@@ -490,13 +490,12 @@ background: #FFF;
     .portfolio-section{
         padding: 2rem;
         width: 90%;
-        background-color: green;
     }
     .portfolio-section h1{
         font-size: 24px;
     }
     .manchester-uni img{
-        width: 260px;
+        width: 90%;
     }
     .test-wrap{
         flex-direction: column;
@@ -518,8 +517,9 @@ background: #FFF;
         font-size: 16px;
     }
     .blogs{
-        flex-direction: column;
         width: 100%;
+        flex-direction: column;
+        gap: 1rem;
     }
     .skills-section{
         padding: 2rem;
@@ -536,14 +536,15 @@ background: #FFF;
         flex-direction: column;
         gap: 2.37rem;
     }
-    /* .blog img{
-        width: 80%;
-    } */
     .blog-section{
-        width: 80%;
+        width: 100vw;
+        padding-left: .5rem;
     }
-    .blog-section h1{
-        font-size: 22px;
+    .blog-section .buttons{
+        font-size: 12px;
+    }
+    .blog-section h2{
+        font-size: 16px;
     }
     .contact-form{
        display: flex;
@@ -568,6 +569,11 @@ background: #FFF;
 
     .contact-wrapper{
         width: 80%;
+    }
+    .input{
+        
+        height: 32px;
+        margin: .2rem 0;
     }
   }
 
@@ -608,8 +614,9 @@ background: #FFF;
         width: 80%;
        }
        .blog{
-        width: 50%;
-        margin: 1rem 0;
+        width: 80%;
+        margin-left: 1.5rem;
+        
     }
     .projects{
         width: 80%;
@@ -619,14 +626,14 @@ background: #FFF;
        overflow-x: auto; */
        flex-direction: column;
     }
-    .blogs{
+    /* .blogs{
         width: 100%;
        display: grid;
        grid-auto-flow: column;
        grid-auto-columns: 80%;
        overflow-x: auto;
        gap: .5rem;
-    }
+    } */
     .blog h1{
         font-size: 16px;
     }
