@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: -4px 14px 14px 4px rgba(0,0,0,0.1);
+    padding: 1rem 4.74rem;
+    width: 100%;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.menu ul li{
+    list-style: none;
+    margin: 0 .8rem;
+    font-size: 21.33px;
+}
+.menu ul li a{
+    color: var(--Primary, #5E3BEE);
+    font-family: 'Roboto', sans-serif;
+font-size: 21.333px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 32px */
+}
+.menu-button{
+    display: none;
+}
+.btn{
+    padding: 1rem 2rem;
+    border: 1px solid #5E3BEE;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.sign-up{
+    background-color: #5E3BEE;
+    color: #fff;
+    font-weight: 600;
+}
+.log-in{
+    font-weight: 600;
+}
+.contact-me{
+    background-color: #fff;
+}
+
+/*==========================         Article ==============*/
+main{
+    width: 100%;
+    padding: 16rem 4.777rem;
+}
+.article{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.article img{
+    width: 90%;
+    margin-bottom: 2rem;
+}
+.blogs-list{
+    grid-row: span 2;
+    padding: 2rem;
+    border: 2px solid #5E3BEE;
+}
+.blogs-list .title{
+    font-size: 26px;
+}
+.blogs-list .container{
+    margin: 1rem 0;
+    box-shadow: 0px 10px 9.4px 0px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+}
+.blogs-list .container h1{
+    font-size: 24px;
+    color: #352d3a;
+    font-weight: 400;
+}
+.blogs-list .container h2{
+    font-size: 16px;
+    color: #5E3BEE;
+    font-weight: 200;
+    margin-top: .5rem;
+}
+
+
+/*-------------------------------------------       Footer      ------------------------------*/
+footer{
+    padding: 2rem 0;
+    width: 100%;
+height: 295px;
+background: #F5FCFF;
+}
+footer .top-part{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4.777rem;
+    border-bottom: 1px solid black;
+}
+footer .bottom-part{
+    display: flex;
+    padding: 1rem 4.777rem;
+    justify-content: space-between;
+}
+
+
+
+/*===============================      Comment Section ================================*/
+.comment-section{
+
+    padding: 2rem;
+    grid-column: span 2;
+}
+.buttons{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons .bottom{
+    display: flex;
+    gap: 1rem;
+}
+.comment-btn{
+    padding: .5rem;
+    background-color: #5E3BEE;
+    color: #ffff;
+    font-weight: 400;
+    border-radius: 6px;
+    border: none;
+}
+.comment textarea{
+    border-radius: 8px;
+    background-color: #f4f4f4;
+}
+.comment textarea::placeholder{
+    padding: .8rem;
+}
+/*===============================      Tablet ================================*/
+@media only screen and (max-width: 900px){
+    .menu{
+        display: none;
+    }
+    .article{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .blogs-list{
+        grid-row: span 2;
+        grid-row-start: 3;
+        padding: 2rem;
+        border: 2px solid #5E3BEE;
+    }
+}
+
+
+/* ================================  Phone  ------================================*/
+
+@media only screen and (max-width: 600px){
+    .menu-button{
+        display: block;
+    }
+    .contact-btn{
+        display: none;
+    }
+    .article{
+        display: flex;
+        flex-direction: column;
+    }
+}
