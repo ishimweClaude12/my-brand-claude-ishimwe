@@ -6,7 +6,6 @@
 
 header{
     width: 100%;
-    position: fixed;
 }
 .nav-wrapper{
     display: flex;
@@ -57,48 +56,50 @@ line-height: 150%; /* 32px */
 .contact-me{
     background-color: #fff;
 }
+/*-------------------------------------------       Form      ------------------------------*/
+  body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    margin: 4rem auto;
+    
+  }
 
-/*==========================         Article ==============*/
-main{
+  .login-container h2 {
+    color: #333;
+  }
+
+  .login-container input {
     width: 100%;
-    padding: 16rem 4.777rem;
-}
-.article{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
-}
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
 
-.article img{
-    width: 90%;
-    margin-bottom: 2rem;
-}
-.blogs-list{
-    grid-row: span 2;
-    padding: 2rem;
-    border: 2px solid #5E3BEE;
-}
-.blogs-list .title{
-    font-size: 26px;
-}
-.blogs-list .container{
-    margin: 1rem 0;
-    box-shadow: 0px 10px 9.4px 0px rgba(0, 0, 0, 0.25);
-    padding: 2rem;
-}
-.blogs-list .container h1{
-    font-size: 24px;
-    color: #352d3a;
-    font-weight: 400;
-}
-.blogs-list .container h2{
-    font-size: 16px;
-    color: #5E3BEE;
-    font-weight: 200;
-    margin-top: .5rem;
-}
+  .login-container button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
 
-
+  .login-container button:hover {
+    background-color: #45a049;
+  }
 /*-------------------------------------------       Footer      ------------------------------*/
 footer{
     padding: 2rem 0;
@@ -120,39 +121,7 @@ footer .bottom-part{
 
 
 
-/*===============================      Comment Section ================================*/
-.comment-section{
-    background-color: #f4f4f4;
-    width: 100%;
-    padding: 2rem 0;
-    padding: 1rem;
-    border-radius: 12px;
-}
-.buttons{
-    margin: 2rem 0;
-    display: flex;
-    justify-content: space-between;
-}
-.buttons .bottom{
-    display: flex;
-    gap: .5rem;
-    margin-top: .5rem;
-}
-.comment-btn{
-    padding: .5rem;
-    background-color: #5E3BEE;
-    color: #ffff;
-    font-weight: 400;
-    border-radius: 6px;
-    border: none;
-}
-.comment textarea{
-    border-radius: 8px;
-    background-color: #f4f4f4;
-}
-.comment textarea::placeholder{
-    padding: .8rem;
-}
+
 /*===============================      Tablet ================================*/
 @media only screen and (max-width: 900px){
     .nav-wrapper{
@@ -175,16 +144,26 @@ footer .bottom-part{
         padding: .5rem 1rem;
         border-radius: 6px;
     }
+    .login-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 50%;
+        text-align: center;
+        margin: 4rem auto;
+        
+      }
 }
 
 
 /* ================================  Phone  ------================================*/
 
 @media only screen and (max-width: 600px){
-    main{
+    /* main{
         width: 100%;
         padding: 8rem 2.33rem;
-    }
+    } */
     .menu-button{
         display: block;
     }
@@ -198,4 +177,14 @@ footer .bottom-part{
     .blogs-list{
         padding: 1rem;
     }
+    .login-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        text-align: center;
+        margin: 2rem auto;
+        
+      }
 }
