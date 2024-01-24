@@ -542,14 +542,10 @@ footer .bottom-part{
     }
     .blogs{
         display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 90%;
-        overflow-x: auto;
-        padding: 1rem;
-        gap: 1rem;
+       grid-template-columns: 1fr 1fr 1fr;
     }
     .blog{
-        width: 90%;
+        width: 100%;
         margin-left: 1.5rem;
         
     }
@@ -570,7 +566,7 @@ footer .bottom-part{
     }
     .blog-section{
         width: 100%;
-        padding-left: .5rem;
+        padding-left: 1rem;
     }
     .blog-section .buttons{
         font-size: 12px;
@@ -612,6 +608,9 @@ footer .bottom-part{
         display: none;
     }
     .bottom-part .menu{
+        display: none;
+    }
+    .hide-on-phone{
         display: none;
     }
   }
@@ -683,3 +682,4 @@ footer .bottom-part{
         margin: .2rem 0;
     }
   }
+
