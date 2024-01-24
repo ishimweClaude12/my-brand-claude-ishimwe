@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dashboard_page_style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
@@ -83,6 +84,10 @@
                         </div>
                     </div>
                 </div>
+                <div class="graph">
+                    <h1>Graph for the increase in user each month</h1>
+                    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                </div>
 
         </div>
         <div class="messages">
@@ -101,6 +106,14 @@
                 <h4>Hi, I like your portfolio and what you have done for those clients of ...</h4>
             </div>
         </div>
+        
     </main>
+    <!----------------------------- Footer ------------------------------->
+    <footer>
+        <h1 class="footer-text">Copy right @ Claude 2024</h1>
+    </footer>
+    <script src="./dash_script.js">
+        
+        </script>
 </body>
 </html>
