@@ -108,7 +108,7 @@ font-style: normal;
 font-weight: 600;
 line-height: 120%; /* 89.6px */
 }
-.hero-text button{
+.get-in-touch-btn{
     border-radius: 5.333px;
 background: var(--Primary, #5E3BEE);
 color: #fff;
@@ -119,6 +119,7 @@ justify-content: center;
 align-items: center;
 gap: 10.667px;
 margin: 2rem 0;
+border: none;
 }
 .base{
     color: #5E3BEE,
@@ -134,6 +135,12 @@ margin: 2rem 0;
 }
 .menu-button{
     display: none;
+}
+.menu-button button{
+    background-color: #fff;
+    font-weight: 800;
+    z-index: 9;
+    border: none;
 }
 /*=================               My Skills Section             ====================*/
 .skills-section h1{
@@ -237,14 +244,14 @@ line-height: 150%; /* 36px */
 .portfolio-section h1{
     color: var(--Heading-color, #282938);
 font-family: 'Roboto', sans-serif;
-font-size: 64px;
+font-size: 32px;
 font-style: normal;
 font-weight: 700;
 line-height: 120%; /* 76.8px */
 }
 .manchester-uni{
    padding: 2rem;
-    width: 70%;
+    /* width: 70%; */
     box-shadow: 11px 15px 10px -4px rgba(0,0,0,0.1);
     border-radius: 12px;
 }
@@ -261,11 +268,9 @@ font-weight: 700;
 line-height: 140%; /* 44.8px */
 }
 .projects{
-    width: 100%;
-   display: grid;
-   grid-auto-flow: column;
-   grid-auto-columns: 33.33%;
-   overflow-x: auto;
+   display: flex;
+   flex-basis: auto;
+   gap: 2rem;
 }
 /* =============================================      Testimonials ========================*/
 .customer-testimonials{
@@ -310,7 +315,7 @@ line-height: 140%; /* 44.8px */
 
 /* ======================================        Blogs Section               =====================*/
 .blog-section{
-    width: 80%;
+    width: 100%;
     padding: 4.777rem;
 }
 .blog-section h1{
@@ -323,10 +328,10 @@ font-weight: 700;
 line-height: 120%; /* 76.8px */
 }
 .blogs{
-    width: 100%;
+    width: 80%;
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: 40%;
+        grid-auto-columns: 33%;
         overflow-x: auto;
         padding: 1rem;
         gap: 2rem;
@@ -343,7 +348,7 @@ line-height: 120%; /* 76.8px */
 }
 .blog h1{
     margin: 2rem 0;
-    font-size: 32px;
+    font-size: 22px;
     font-family: 'Poppins', sans-serif;
 }
 .blog p{
@@ -486,11 +491,21 @@ footer .bottom-part{
         flex-direction: column;
         width: 100%;
     }
-    /* .hero-text{
-        width: 80%;
-    } */
+    .text-1{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    }
     .hero-text h1{
-        font-size: 32px;
+        font-size: 22px;
+        text-align: center;
+    }
+    .get-in-touch-btn{
+        border-radius: 2.25px;
+    padding: 9.33px 21.65px;
+    gap: 5.36px;
+    margin: 2rem auto;
+    border: none;
     }
     .purple{
         font-size: 41px;
@@ -558,35 +573,39 @@ footer .bottom-part{
         font-size: 16px;
     }
     .blogs{
-        display: grid;
-       grid-template-columns: 1fr 1fr 1fr;
+      width: 85%;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2.5555rem;
     }
     .blog{
-        width: 100%;
-        margin-left: 1.5rem;
-        
+        width: 80%;
+        background-color: green;
+        margin: 0 4rem;
     }
     .skills-section{
-        padding: 2rem;
-        padding-left: 4rem;
+        padding: 1rem;
     }
     .skill-card{
         width: 80%;
     }
     .cards-wrapper{
-        width: 90%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 2.37rem;
+        gap: 1rem;
     }
     .blog-section{
         width: 100%;
-        padding-left: 1rem;
+     
     }
     .blog-section .buttons{
         font-size: 12px;
+    }
+    .blog-section h1{
+        font-size: 22px;
+        margin: 0 0 0 1rem;
     }
     .blog-section h2{
         font-size: 16px;
@@ -631,8 +650,10 @@ footer .bottom-part{
         display: none;
     }
     .submit-btn{
-        padding: .6rem 1rem;
-        width: 20%;
+        margin: 2rem auto;
+        padding: .8rem 1rem;
+        width: 40%;
+        border: none;
     }
   }
 
@@ -649,7 +670,7 @@ footer .bottom-part{
         width: 90%;
     }
     .profile-picture{
-        width: 90%;
+        width: 100%;
     }
     .font-46{
         font-size: 24px;
@@ -686,15 +707,16 @@ footer .bottom-part{
         gap: 1rem;
     }
     .projects{
-        width: 80%;
+        width: 100%;
        display: flex;
        flex-direction: column;
+       padding: 2rem;
     }
     .blog h1{
         font-size: 16px;
     }
     .blog-section{
-        width: 80%;
+        width: 100%;
         padding: 1rem 0;
     }
     .input{
