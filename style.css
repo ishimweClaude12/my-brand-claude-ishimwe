@@ -22,9 +22,10 @@ label{
 .hidden-menu{
     position: absolute;
     background-color: #fff;
-    width: 80%;
-    
-    margin-top: 13rem;
+    width: 50%;
+    transition: display 0.5s;
+    margin: 16rem 0 1rem 5rem;
+    /* margin-top: 16rem; */
     padding: .2rem;
     border: none;
     border-radius: 8px;
@@ -164,6 +165,9 @@ border: none;
     font-weight: 800;
     z-index: 9;
     border: none;
+}
+.open-icon{
+    display: none;
 }
 /*=================               My Skills Section             ====================*/
 .skills-section h1{
@@ -433,7 +437,13 @@ line-height: 120%; /* 76.8px */
     margin: 0 0 2rem 0;
 }
 .contact-wrapper{
-    width: 80%;
+    width: 40%;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    margin: 2rem auto;
+}
+.contact-wrapper h1{
+    font-size: 32px;
 }
 .contact-form{
     display: grid;
@@ -445,23 +455,61 @@ line-height: 120%; /* 76.8px */
 .col-span-2{
     grid-column: span 2;
 }
-.input{
-    width: 100%;
-    height: 64px;
+input{
+    width: 80%;
+    height: 32px;
     border-radius: 8px;
 border: 1.333px solid var(--Primary, #5E3BEE);
 background: #FFF;
     margin: .5rem 0;
+    font-size: 1rem;
+    padding: 0 0 0 1rem;
+}
+.contact-form p{
+    font-size: 14px;
+    color: #E62872;
+}
+
+input{
+    display: block;
+    outline: none !important;
+}
+
+/* validation styles */
+
+input.valid{
+    border-color: #36cc36;
+}
+input.invalid{
+    border-color: #E62872;
+}
+.input + p{
+    opacity: 0;
+    height: 0;
+}
+input.invalid + p{
+    opacity: 1;
+    height: auto;
+}
+input.valid +p{
+    opacity: 0;
 }
 .text-area{
-    width: 100%;
+    width: 87%;
     border-radius: 10px;
     margin: .5rem 0;
+    border: 1.333px solid var(--Primary, #5E3BEE);
+    padding: 1rem;
+    font-size: 1rem;
     
 }
+.text-area:focus{
+    outline: none !important;
+    border: 1.333px solid #36cc36;
+}
 .text-area::placeholder{
-    padding: 1rem;
-    font-size: 14px;
+    /* padding: 1rem; */
+    font-size: 1rem;
 }
 .select{
     width: 100%;
@@ -560,7 +608,7 @@ footer .bottom-part{
     .portfolio-section{
         padding: 1rem;
         width: 80%;
-        display: none;
+        /* display: none; */
     }
     .portfolio-section h1{
         font-size: 24px;
@@ -633,16 +681,18 @@ footer .bottom-part{
     }
     .blog-section h1{
         font-size: 22px;
-        margin: 0 0 0 1rem;
+        margin-left: 2rem;
     }
     .blog-section h2{
         font-size: 16px;
     }
     .contact-form{
        display: flex;
-       gap: 1rem;
        flex-direction: column;
        width: 100%;
+    }
+    .contact-wrapper h1{
+        font-size: 22px;
     }
     .contact-me-section h2{
         font-size: 16px;
@@ -659,11 +709,7 @@ footer .bottom-part{
     .contact-wrapper{
         width: 80%;
     }
-    .input{
-        
-        height: 32px;
-        margin: .2rem 0;
-    }
+    
 
     .top-part .menu{
         display: none;
@@ -711,6 +757,11 @@ footer .bottom-part{
         flex-direction: column;
         align-items: center;
     }
+    .contact-form{
+        gap: 10px;
+        font-size: 18px;
+        width: 100%;
+    }
     .cards-wrapper{
         grid-auto-flow: column;
         grid-auto-columns: 50%;
@@ -744,10 +795,16 @@ footer .bottom-part{
         width: 100%;
         padding: 1rem 0;
     }
-    .input{
-        
-        height: 32px;
-        margin: .2rem 0;
+    .blog-section .title{
+        font-size: 32px;
+        margin-left: 4.777rem;
+    }
+    input{
+        border-radius: 2px;
+        height: 42px;
+    }
+    .text-area{
+        border-radius: 2px;
     }
   }
 

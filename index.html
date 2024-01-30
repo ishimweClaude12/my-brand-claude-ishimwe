@@ -35,27 +35,34 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#blogs-section">Blogs</a></li>
+                    <li><a href="#contact-me-section">Contact Me</a></li>
                 </ul>
             </div>
             <div class="contact-btn">
-                <button class="btn contact-me">Contact Me</button>
+                <button class="btn contact-me"><a href="#contct-me">Contact Me</a></button>
                 
             </div>
             <div class="menu-button">
-                <button id="burger">
+                <button class="menu-icon" id="burger">
                     <i style="border: none;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"/></svg>
+                        <svg id="hamburger-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"/></svg>
+                    </i>
+                </button>
+                <button id="close" class="close-icon hide">
+                    <i>
+                        <svg id="close-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6m0 12L6 6"/></svg>
                     </i>
                 </button>
                 
             </div>
-            <div class="hidden-menu" id="hidden_menu">
+            <div class="hidden-menu hide" id="hidden_menu">
                 <ul>
                     <li><a href="#">Home</a></li>                 
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#blogs-section">Blogs</a></li>
+                    <li><a href="#contact-me-section">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -407,7 +414,7 @@
             </div>
         </section>
         <section id="blogs-section" class="blog-section">
-            <h1>Blogs</h1>
+            <h1 class="title">Blogs</h1>
             <div class="blogs">
                 <div class="blog">
                     <a href="./single_blog_page.html">
@@ -571,29 +578,37 @@
             
         </section>
         <section class="contact-me-section">
-            <h1>Contact Me</h1>
-            <h2>Cantact me at anytime and I will get back to you ASAP</h2>
+           
             <div class="contact-wrapper">
-                <form action="#" class="contact-form">
+                <h1>Contact Me</h1>
+                <form action="#" class="contact-form" autocomplete="off">
+                
                     <div class="f-name">
-                            <label for="first-name">First Name:</label> <br>
-                            <input type="text" name="first-name" class="input">
+                            <label for="first-name" class="hide-on-phone">First Name:</label> <br>
+                            <input type="text" name="first_name" placeholder="First Name" class="input">
+                            <p>First Name must contain 4-12 Characters only</p>
                     </div>
                     <div class="l-name">
-                            <label for="last-name">Last Name:</label> <br>
-                            <input type="text" name="last-name" class="input">
+                            <label class="hide-on-phone" for="last-name">Last Name:</label> <br>
+                            <input type="text" placeholder="Last Name" name="last_name" class="input">
+                            <p>Last Name must contain 4-12 Characters only</p>
+
                     </div>
                     <div class="email">
-                            <label for="email">E-mail:</label> <br>
-                            <input type="email" name="email" class="input">
+                            <label class="hide-on-phone" for="email">E-mail:</label> <br>
+                            <input type="email" placeholder="Email" name="email" class="input">
+                            <p>Invalid Email address</p>
+
                     </div>
                     <div class="phone-number">
-                            <label for="phone-number">Phone Number:</label> <br>
-                            <input type="number" name="phone-number" class="input">
+                            <label for="phone-number" class="hide-on-phone">Phone Number:</label> <br>
+                            <input type="number" name="telephone" class="input" placeholder="Phone Number">
+                            <p>Please enter a full phone number</p>
+
                     </div>
                     <div class="message col-span-2">
-                        <label for="message">Message:</label> <br>
-                        <textarea placeholder="Type your message..." name="message" id="msg" cols="30" rows="10" class="text-area"></textarea>
+                        <label for="message" class="hide-on-phone">Message:</label> <br>
+                        <textarea placeholder="Type your message..." name="message" id="msg" cols="15" rows="5" class="text-area"></textarea>
                     </div>
                 </form>
                 <div class="btn-wrapper">
