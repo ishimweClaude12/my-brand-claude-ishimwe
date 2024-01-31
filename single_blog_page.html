@@ -24,9 +24,12 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#comments-section">Comments</a></li>
-                    <li><a href="./index.html">Portfolio</a></li>
+                    <li><a href="#">Home</a></li>                 
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#blogs-section">Blogs</a></li>
+                    <li><a href="#contact-section">Contact Me</a></li>
                 </ul>
             </div>
             <div class="contact-btn">
@@ -34,19 +37,34 @@
                 <a href="./pages/login.html" class="btn log-in">Log In</a>
             </div>
             <div class="menu-button">
-                <button>
+                <button class="menu-icon" id="burger">
                     <i style="border: none;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"/></svg>
+                        <svg id="hamburger-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"/></svg>
                     </i>
                 </button>
-
+                <button id="close" class="close-icon hide">
+                    <i>
+                        <svg id="close-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6m0 12L6 6"/></svg>
+                    </i>
+                </button>
+                
+            </div>
+            <div class="hidden-menu hide" id="hidden_menu">
+                <ul>
+                    <li><a href="#">Home</a></li>                 
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#blogs-section">Blogs</a></li>
+                    <li><a href="#contact-me-section">Contact Me</a></li>
+                </ul>
             </div>
         </nav>
     </header>
     <main>
         <div class="article">
             <div>
-                <h1>The role of communication in virtual workplace</h1>
+                <h1 class="title">The role of communication in virtual workplace</h1>
                 <p class="span-2 font-24">
                     Virtual collaboration extends beyond project tasks; it encompasses fostering a collaborative culture. Regular virtual meetings, team-building activities, and informal channels for non-work-related conversations contribute to building relationships and a sense of camaraderie among team members. This virtual watercooler effect is essential for maintaining a positive and connected team dynamic.
                     Virtual meetings serve as the backbone of remote collaboration. Scheduling regular team meetings, one-on-one check-ins, and brainstorming sessions through video conferencing tools help bridge the gap created by physical distance. Ensuring these meetings are engaging and purposeful is crucial for keeping the team aligned and motivated.
@@ -58,7 +76,7 @@
             </div>
            <div>
             <img src="./assets/images/blog1.jpg" alt="" srcset="">
-            <p>Effective communication serves as the lifeblood of successful interactions in both personal and professional spheres, playing a pivotal role in various aspects of daily life. In the business realm, clear and precise communication is the linchpin of efficient teamwork. Teams rely on effective communication to collaborate seamlessly, share ideas, and ensure everyone is aligned towards common goals. Within an organizational framework, communication fosters a healthy work culture, nurturing transparency and trust. It empowers employees by providing them with the necessary information to make informed decisions and actively contribute to the achievement of overarching objectives.
+            <p class="font-24">Effective communication serves as the lifeblood of successful interactions in both personal and professional spheres, playing a pivotal role in various aspects of daily life. In the business realm, clear and precise communication is the linchpin of efficient teamwork. Teams rely on effective communication to collaborate seamlessly, share ideas, and ensure everyone is aligned towards common goals. Within an organizational framework, communication fosters a healthy work culture, nurturing transparency and trust. It empowers employees by providing them with the necessary information to make informed decisions and actively contribute to the achievement of overarching objectives.
                 
             In essence, effective communication is a multifaceted tool that permeates every facet of our lives. It builds bridges between individuals, nurtures collaboration, empowers leaders, strengthens relationships, and facilitates personal and professional growth. Recognizing and honing effective communication skills not only enriches our immediate interactions but also contributes to the fabric of a more connected and harmonious society.</p>
            </div>
@@ -205,5 +223,6 @@
             </div>
         </div>
     </footer>
+<script src="single_blog_page_script.js"></script>
 </body>
 </html>

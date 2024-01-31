@@ -3,8 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
-
+.font-24{
+    font-size: 24px;
+}
 header{
     width: 100%;
     position: fixed;
@@ -40,6 +43,86 @@ line-height: 150%; /* 32px */
 .menu-button{
     display: none;
 }
+.menu-button button{
+    background-color: #fff;
+    font-weight: 800;
+    z-index: 9;
+    border: none;
+}
+.open-icon{
+    display: none;
+}
+.btn{
+   
+    padding: 15px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.hidden-menu{
+    position: absolute;
+    background-color: #fff;
+    width: 50%;
+    transition: display 0.5s;
+    margin: 16rem 0 1rem 5rem;
+    /* margin-top: 16rem; */
+    padding: .2rem;
+    border: none;
+    border-radius: 8px;
+    border: 2px solid #f4f4f4;
+
+}
+.hidden-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .6rem;
+    list-style: none;
+    padding: 1rem;
+}
+.hidden-menu ul li a{
+    color: #5E3BEE;
+}
+.hide{
+    display: none;
+}
+.contact-me{
+    border: 1.33px solid #5E3BEE;
+    background-color: #fff;
+    font-size: 21.33;
+    color: #5E3BEE;
+}
+.header{
+    position: fixed;
+    width: 100%;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: -4px 14px 14px 4px rgba(0,0,0,0.1);
+    padding: 1rem 4.74rem;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.menu ul li{
+    list-style: none;
+    margin: 0 .8rem;
+    font-size: 21.33px;
+}
+.menu ul li a{
+    color: var(--Primary, #5E3BEE);
+    font-family: 'Roboto', sans-serif;
+font-size: 21.333px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 32px */
+}
 .btn{
     padding: 1rem 2rem;
     border: 1px solid #5E3BEE;
@@ -69,7 +152,10 @@ main{
     grid-template-columns: repeat(3,1fr);
     gap: 2rem;
 }
-
+.title{
+    margin: 1rem 0;
+    font-size: 2rem;
+}
 .article img{
     width: 90%;
     margin-bottom: 2rem;

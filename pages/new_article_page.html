@@ -10,6 +10,10 @@
       tinymce.init({
         selector: '#mytextarea'
       });
+     
+      function publish(){ 
+        editor.save()
+      }
     </script>
   </head>
 
@@ -66,9 +70,11 @@
             
         </div>
      </main>
-    <form class="tiny-form" method="post">
+    <form class="tiny-form" method="post" onsubmit="publish">
       <textarea id="mytextarea">Hello, World!</textarea>
+     
     </form>
+     <button onclick="publish()">Publish</button>
      <!----------------------------- Footer ------------------------------->
      <footer>
         <h1 class="footer-text">Copy right @ Claude 2024</h1>

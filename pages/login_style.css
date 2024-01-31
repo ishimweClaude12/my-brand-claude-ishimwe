@@ -38,6 +38,48 @@ line-height: 150%; /* 32px */
 .menu-button{
     display: none;
 }
+.menu-button button{
+    background-color: #fff;
+    font-weight: 800;
+    z-index: 9;
+    border: none;
+}
+.open-icon{
+    display: none;
+}
+.btn{
+   
+    padding: 15px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.hidden-menu{
+    position: absolute;
+    background-color: #fff;
+    width: 50%;
+    transition: display 0.5s;
+    margin: 10rem 0 1rem 5rem;
+    /* margin-top: 16rem; */
+    padding: .2rem;
+    border: none;
+    border-radius: 8px;
+    border: 2px solid #f4f4f4;
+
+}
+.hidden-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .6rem;
+    list-style: none;
+    padding: 1rem;
+}
+.hidden-menu ul li a{
+    color: #5E3BEE;
+}
+.hide{
+    display: none;
+}
 .btn{
     padding: 1rem 2rem;
     border: 1px solid #5E3BEE;
@@ -86,20 +128,68 @@ line-height: 150%; /* 32px */
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+  input:focus{
+    outline: 1px solid #5E3BEE;
+  }
 
   .login-container button {
     background-color: #4caf50;
     color: #fff;
-    padding: 10px;
+    padding: 1rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
   }
 
   .login-container button:hover {
-    background-color: #45a049;
+    background-color: #4b994f;
   }
+.login-container a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+  
+input{
+    display: block;
+    padding: 8px 16px;
+    font-size: 2em;
+    margin: 10px auto;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    outline: none !important;
+}
+
+/* validation styles */
+
+input.valid{
+    border-color: #36cc36;
+}
+input.invalid{
+    border-color: #E62872;
+}
+input + p{
+    font-family: arial;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: #E62872;
+    opacity: 0;
+    height: 0;
+}
+input.invalid + p{
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
 /*-------------------------------------------       Footer      ------------------------------*/
 footer{
     padding: 2rem 0;

@@ -1,3 +1,5 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
 }
 .body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: initial;
 }
 h1,h2,h3,p,a{
     font-family: 'Poppins', sans-serif;
@@ -12,12 +15,6 @@ h1,h2,h3,p,a{
 }
 label{
     font-family: 'Roboto', sans-serif;
-}
-.btn{
-   
-    padding: 15px 30px;
-    border-radius: 6px;
-    cursor: pointer;
 }
 .hidden-menu{
     position: absolute;
@@ -51,18 +48,25 @@ label{
     background-color: #fff;
     font-size: 21.33;
     color: #5E3BEE;
+    padding: 0.8rem 1.6rem;
 }
 .header{
+    display: block;
+    top: 0;
     position: fixed;
+    box-sizing: border-box;
     width: 100%;
+    z-index: 99;
+    
 }
 .nav-wrapper{
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
     box-shadow: -4px 14px 14px 4px rgba(0,0,0,0.1);
-    padding: 1rem 4.74rem;
+    padding: 1rem 4.74rem;    
 }
 
 .menu ul{
@@ -108,7 +112,7 @@ line-height: 150%; /* 54px */
 .c-text{
     color: var(--Heading-color, #282938);
 font-family: Poppins;
-font-size: 48px;
+font-size: 4rem;
 font-style: normal;
 font-weight: 900;
 line-height: 150%;
@@ -137,7 +141,7 @@ line-height: 120%; /* 89.6px */
 background: var(--Primary, #5E3BEE);
 color: #fff;
 display: flex;
-width: 170.667px;
+width: 40%;
 padding: 18.667px 42.667px;
 justify-content: center;
 align-items: center;
@@ -341,9 +345,22 @@ line-height: 140%; /* 44.8px */
 }
 
 /* ======================================        Blogs Section               =====================*/
+.blg-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+.blg-sec .title{
+    margin: 1rem 0;
+    font-size: 2rem;
+    text-align: left;
+}
 .blog-section{
     width: 100%;
     padding: 4.777rem;
+    display: none;
 }
 .blog-section h1{
     margin: 2rem 0;
@@ -354,7 +371,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 120%; /* 76.8px */
 }
-.blogs{
+/* .blogs{
     width: 80%;
         display: grid;
         grid-auto-flow: column;
@@ -362,7 +379,7 @@ line-height: 120%; /* 76.8px */
         overflow-x: auto;
         padding: 1rem;
         gap: 2rem;
-}
+} */
 .blog{
     width: 80%;
     padding: 2rem 2rem 0;
@@ -440,7 +457,7 @@ line-height: 120%; /* 76.8px */
     width: 40%;
     background-color: #f4f4f4;
     padding: 2rem;
-    margin: 2rem auto;
+    margin: 2rem 0;
 }
 .contact-wrapper h1{
     font-size: 32px;
@@ -662,7 +679,9 @@ footer .bottom-part{
         padding: 1rem;
     }
     .skill-card{
-        width: 80%;
+        width: 70%;
+        padding: 1rem;
+        gap: 1rem;
     }
     .cards-wrapper{
         width: 100%;
@@ -707,7 +726,9 @@ footer .bottom-part{
    
 
     .contact-wrapper{
-        width: 80%;
+        /* width: 100%; */
+        width: 70%;
+
     }
     
 
@@ -729,6 +750,9 @@ footer .bottom-part{
   }
 
   @media only screen and (max-width: 900px){
+    .header{
+        width: 100%;
+    }
     .menu{
         display: none;
         
@@ -762,26 +786,37 @@ footer .bottom-part{
         font-size: 18px;
         width: 100%;
     }
+    .test-wrap{
+        flex-direction: column;
+
+    }
+    .testimonial-1{
+        width: 60%;
+    }
     .cards-wrapper{
-        grid-auto-flow: column;
-        grid-auto-columns: 50%;
+      
+        grid-auto-columns: 50.33%;
+        gap: 1rem;
+       
        }
-       .contact-wrapper{
+       .skill-card{
         width: 80%;
+        padding: 1rem;
+        gap: 1rem;
        }
        .blog{
         width: 80%;
         margin-left: 1.5rem;
         
     }
-    .blogs{
+    /* .blogs{
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: 50%;
         overflow-x: auto;
         padding: 1rem;
         gap: 1rem;
-    }
+    } */
     .projects{
         width: 100%;
        display: flex;
@@ -812,4 +847,121 @@ footer .bottom-part{
         .hidden-menu{
             display: none;
         }
+  }
+
+  /*   ==========================             Carousel Styles =========================*/
+  .wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 246px;
+    list-style: none;
+    background: #f4f4f4;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+  .carousel .card .img {
+    height: 148px;
+    width: 100%;
+    border-radius: 8px;
+  }
+  .card .img img {
+    width: 100%;
+    /* height: 140px; */
+    height: 140px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+  }
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 15px 0 5px;
+  }
+  .carousel .card .card-bottom{
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card .card-bottom .card-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+  }
+  @media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 36px);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel {
+      grid-auto-columns: 80%;
+
+    }
+    .blg-sec{
+        padding: 0 1rem;
+    }
   }
