@@ -19,13 +19,15 @@ close_btn.addEventListener('click', function(evt){
 
 // Form validation
 const inputs = document.querySelectorAll('input');
+const txt_area = document.getElementById('msg')
 // regex patterns
 const patterns = {
         telephone: /^\d{10}$/,
         last_name: /^[a-z]{4,12}$/i,
         first_name: /^[a-z]{4,12}$/i,
         password: /^[\d\w@-]{8,20}$/i,
-        email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/
+        email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
+        message: /^\w{20}/
         //             yourname @ domain   .  com          ( .uk )
 };
 
@@ -35,24 +37,48 @@ function validate(field, regex){
     if(regex.test(field.value)){
          field.className = 'valid';
         field.classList.add('valid')
-        console.log('valid')
+        // console.log('valid')
     } else {
         field.className = 'invalid';
-       console.log('invalid')
+    //    console.log('invalid')
      
     }
 
 }
 
-
+// Submit validation funciton
+function submitValidation(field, regex){
+    if(regex.test(field.value)){
+        // field.classList.add('valid')
+        console.log('valide', field.name)
+        field.classList.add('valid')
+    } else{
+        console.log(field.name, 'invalid');
+        field.classList.add('invalid')
+    }
+}
 // attach keyup events to inputs
 inputs.forEach((input) => {
     input.addEventListener('keyup', (e) => {
             // console.log(patterns[e.target.attributes.name.value]);
             validate(e.target, patterns[e.target.attributes.name.value]);
+            validate(txt_area, patterns.message)
+            console.log(e.target);
     });
 });
 
+// attach an evt listener to text area
+txt_area.addEventListener('keyup', function(evt){
+    validate(evt.target, patterns.message)
+})
+// attach an evt listener to submit and validate
+const submit_btn = document.getElementById('submit');
+submit_btn.addEventListener('click', function(e){
+    inputs.forEach((input) =>{
+       submitValidation(input, patterns[input.name])
+    })
+    submitValidation(txt_area, patterns.message)
+})
 
 // Carousel Js Functionality
 const wrapper = document.querySelector(".wrapper");

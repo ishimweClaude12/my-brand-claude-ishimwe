@@ -511,7 +511,7 @@ input.invalid + p{
 input.valid +p{
     opacity: 0;
 }
-.text-area{
+textarea{
     width: 87%;
     border-radius: 10px;
     margin: .5rem 0;
@@ -519,6 +519,26 @@ input.valid +p{
     padding: 1rem;
     font-size: 1rem;
     
+}
+textarea:focus{
+    outline: none;
+}
+.text-area +p{
+    opacity: 0;
+    height: 0;
+}
+textarea.invalid{
+    border: 1px solid #E62872;
+}
+textarea.valid{
+    border-color: #36cc36 ;
+}
+textarea.invalid + p{
+    opacity: 1;
+    height: auto;
+}
+textarea.valid + p{
+    opacity: 0;
 }
 .text-area:focus{
     outline: none !important;
