@@ -66,7 +66,7 @@ label{
     align-items: center;
     background-color: #fff;
     box-shadow: -4px 14px 14px 4px rgba(0,0,0,0.1);
-    padding: 1rem 4.74rem;    
+    padding: .4rem 4.74rem;    
 }
 
 .menu ul{
@@ -619,7 +619,8 @@ footer .bottom-part{
         font-size: 32px;
     }
     .nav-wrapper{
-        padding: .5rem 2rem;
+        padding: .1rem 2rem;
+        height: 50px;
     }
     .container{
         width: 80%;
@@ -766,6 +767,18 @@ footer .bottom-part{
         padding: .8rem 1rem;
         width: 40%;
         border: none;
+    }
+    footer{
+        padding: 1rem 0;
+        width: 100%;
+        background-color: green;
+    }
+    footer .top-part{
+        padding: 1rem 2rem;
+        border-bottom: 1px solid black;
+    }
+    footer .bottom-part{
+        padding: .4rem 2rem;
     }
   }
 
