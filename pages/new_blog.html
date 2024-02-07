@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html> 
+       <head>    
+            <meta charset="utf-8">    
+            <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />    
+                <link href="../node_modules/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />   
+            <!-- CSS rules for styling the element inside the editor such as p, h1, h2, etc. --><link href="./node_modules/froala-editor/css/froala_style.min.css" rel="stylesheet" type="text/css" /> 
+        </head>    
+        <body>     
+               <div id="example">
+               </div>  
+               <button id="saveButton">Save</button>
+                   
+            <script type="text/javascript" src="../node_modules/froala-editor/js/froala_editor.pkgd.min.js"></script>       
+            <script>   
+            const current_URL = document.URL;       
+                    var editor = new FroalaEditor('#example', {
+    // Set the save param.
+    saveParam: 'content',
+
+    // Set the save URL.
+    saveURL: current_URL,
+
+    // HTTP request type.
+    saveMethod: 'GET',
+
+    // Additional save params.
+    saveParams: {id: 'example'},
+
+    events: {
+      'save.before': function () {
+        // Before save request is made.
+        console.log('The request was made')
+      },
+
+      'save.after': function (res) {
+        const p = document.querySelector('.fr-element')
+        // After successfully save request.
+        const content = p.innerHTML
+        console.log('Here comes the content', content)
+      },
+
+      'save.error': function () {
+        // Do something here.
+        consol.log('Oops!')
+      }
+    }
+  })
+
+
+document.querySelector('#saveButton').addEventListener("click", function () {
+    console.log('I got clicked')
+editor.save.save();
+})    
+            </script>    
+        </body>
+</html>

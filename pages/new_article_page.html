@@ -4,17 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="new_article_page_style.css">
-
-    <script src="https://cdn.tiny.cloud/1/pscrz6ns0t6k7v11nvxxrjvdi3i8d1d7ybzvwggureynemno/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>
-      tinymce.init({
-        selector: '#mytextarea'
-      });
-     
-      function publish(){ 
-        editor.save()
-      }
-    </script>
+    <link href="../node_modules/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../node_modules/froala-editor/js/froala_editor.pkgd.min.js"></script>
   </head>
 
   <body>
@@ -50,7 +41,7 @@
         <div class="top-part">
             <div class="input-wrapper">
                 <h1 class="title">Title</h1>
-                <input class="input" type="text" name="title">
+                <input class="input" type="text" id="blog-title" name="title">
             </div>
             <div class="buttons">
                 <div class="preview-btn">
@@ -60,7 +51,7 @@
                     <span>Preview</span>
                     
                 </div>
-                <div class="publish-btn">
+                <div class="publish-btn " id="saveButton">
                     <i>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M3 20v-6l8-2l-8-2V4l19 8z"/></svg>
                     </i>
@@ -70,11 +61,16 @@
             
         </div>
      </main>
-    <form class="tiny-form" method="post" onsubmit="publish">
-      <textarea id="mytextarea">Hello, World!</textarea>
-     
-    </form>
-     <button onclick="publish()">Publish</button>
+     <div class="txt-editor" id="example">
+    </div> 
+        <button id="log">Log</button> 
+        <button onclick="console.log(localStorage)">C Log</button>
+        <button onclick="localStorage.clear()">Clear</button>
+    <div id="container"></div>
+ <script type="text/javascript" src="../node_modules/froala-editor/js/froala_editor.pkgd.min.js"></script>       
+ <script src="new_artice_script.js">   
+ 
+ </script>    
      <!----------------------------- Footer ------------------------------->
      <footer>
         <h1 class="footer-text">Copy right @ Claude 2024</h1>
