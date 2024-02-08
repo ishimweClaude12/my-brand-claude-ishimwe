@@ -42,6 +42,7 @@
             <div class="input-wrapper">
                 <h1 class="title">Title</h1>
                 <input class="input" type="text" id="blog-title" name="title">
+                <input type="file" name="image" id="blog-image" placeholder="Select Image" class="input-image" >
             </div>
             <div class="buttons">
                 <div class="preview-btn">
@@ -61,12 +62,10 @@
             
         </div>
      </main>
-     <div class="txt-editor" id="example">
-    </div> 
         <button id="log">Log</button> 
         <button onclick="console.log(localStorage)">C Log</button>
         <button onclick="localStorage.clear()">Clear</button>
-    <div id="container"></div>
+        <div class="txt-editor" id="example"></div> 
  <script type="text/javascript" src="../node_modules/froala-editor/js/froala_editor.pkgd.min.js"></script>       
  <script src="new_artice_script.js">   
  

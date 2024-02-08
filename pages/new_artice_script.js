@@ -31,41 +31,29 @@ consol.log('Oops!')
 
 document.querySelector('#saveButton').addEventListener("click", function () {
 
-const blog_input = document.querySelector('#blog-title')
-let blog_title = blog_input.value;
-const content = document.querySelector('.fr-element').innerHTML;
-const paragraphs = document.querySelector('img').parentNode.textContent
-//const image = document.querySelector('img').src
-const image = document.querySelector('img').src
-
-// Define a blog object container
+const blog_title = document.querySelector('#blog-title').value;
+const content = document.querySelector('.fr-element').innerText;
 const id = Math.floor(Math.random() * 100)
-const blog = {
-    blog_title, 
-    paragraphs, 
-    image
-}; 
-localStorage.setItem(id, JSON.stringify(blog)  );
-const articles = []
-for(let i = 0; i <= 100 ; i ++){
-    if(localStorage.getItem(i)) articles.push(JSON.parse(localStorage.getItem(i)))
-}
-blog_input.value = ''
-// Dummy console logging
-const dummy = document.getElementById('log')
-const container = document.getElementById('container')
-dummy.addEventListener('click', (e) =>{
-   articles.forEach(art => {
-    const img_element = document.createElement('img')
-    const paragraph_element = document.createElement('div').innerHTML = art.paragraphs
-    img_element.src = `${art.image}`
-    img_element.alt = 'blog image'
-    container.innerHTML += document.createElement('h1').textContent = `This is the title of the blog${art.blog_title}`
-    console.log(paragraph_element, 'pppppppp')
-    container.append(img_element, paragraph_element)
-   })
-   
-})
+   const file = document.querySelector("input[type=file]").files[0];
+   const reader = new FileReader();
+   reader.addEventListener(
+     "load",
+     () => {
+       // convert image file to base64 string
+        const blog = {
+            id,
+            blog_title, 
+            content, 
+            image : reader.result
+        };
+        window.localStorage.setItem(id, JSON.stringify(blog))
+     },
+     false,
+   );
+ 
+   if (file) {
+     reader.readAsDataURL(file);
+   }
 editor.save.save();
 })    
 

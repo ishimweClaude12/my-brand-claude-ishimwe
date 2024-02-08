@@ -10,6 +10,7 @@
 body{
     background-color: #f4f4f4;
     font-family: 'Poppins', sans-serif;
+    height: 100vh;
 }
 header{
     width: 100%;
@@ -119,7 +120,19 @@ input:focus{
     padding: .4rem .4rem;
     font-size: 12px;
 }
-
+.input-image{
+    background-color: #fff;
+    height: 2.4rem;
+    padding: .4rem 0;
+}
+input::file-selector-button{
+    color: #ffff;
+    border: none;
+    background-color: #5E3BEE;
+    padding: .4rem  .8rem;
+   font-size: .8rem;
+   border-radius: 2px;
+}
 .txt-editor{
     width: 80%;
     margin: 1rem auto;
@@ -131,6 +144,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 .footer-text{
     font-size: 16px;
